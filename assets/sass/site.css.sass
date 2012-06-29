@@ -1,0 +1,448 @@
+// Variables.
+$font-color: black        // Black
+$link-color: #990000      // Red
+$border-color: #cecece    // Soft grey
+$grey-color: #515151      // Grey
+$dark-color: #1a1a1a      // close to black color
+$font-family: Helvetica, Arial, sans-serif
+$leckerli: 'Leckerli One', cursive
+$abel: 'Abel', sans-serif
+$font-size: 1.3em
+// $sprite: sprite-map("sprite/*.png", $spacing: 15px)
+
+// Compass imports & mixins
+@import "compass"
+@import "compass/reset"
+
+@mixin hide
+  left: -9999px
+  position: absolute
+
+@mixin data-uri-bg($image, $properties: false)
+  @if $properties != false
+    background: inline-image($image) $properties
+    *background: url($image) $properties
+  @else
+    background: inline-image($image)
+    *background: url($image)
+
+// Generic styling.
+html,
+body
+  width: 100%
+  height: 100%
+
+html
+  overflow-y: scroll
+
+body
+  font-family: $font-family
+  font-size: 62.5%
+  line-height: 20px
+  color: $font-color
+  background: #fff
+
+// Form styling.
+input,
+textarea
+  font-family: $font-family
+  font-size: $font-size
+  color: $font-color
+
+input[type="submit"],
+button
+  cursor: pointer
+  overflow: visible
+
+// Text styling.
+a
+  text-decoration: none
+  color: $link-color
+
+p
+  font-size: $font-size
+
+h1
+  font-family: $abel
+  font-size: 2.5em
+
+  &.tag
+    width: 92.2340%
+    height: 52px
+    position: relative
+    margin: 0 auto
+    font-family: $leckerli
+    font-size: 2.3em
+    text-align: center
+    line-height: 38px
+    color: #fff
+    +text-shadow(#4f0608 1px 1px 1px)
+    z-index: 10
+
+    > span
+      height: 52px
+      top: 0
+      position: absolute
+      display: inline-block
+
+    .text
+      position: relative
+      display: block
+      padding: 0 57px 0 49px
+
+      > span
+        display: block
+        height: 52px
+        +data-uri-bg('bg_tag.png', top center repeat-x)
+
+        @media (max-width: 435px)
+          span
+            display: none
+
+    .tagleft
+      left: 0
+      width: 49px
+      z-index: 10
+      +data-uri-bg('bg_tag_l.png', top center no-repeat)
+
+    .tagright
+      right: 0
+      width: 57px
+      +data-uri-bg('bg_tag_r.png', top center no-repeat)
+
+section > h1
+  margin-bottom: 15px
+  font-family: $leckerli
+
+section
+  margin-bottom: 40px
+
+.button
+  padding: 0 10px
+  display: inline-block
+  line-height: 35px
+  font-size: 1.5em
+  font-weight: bold
+  text-transform: uppercase
+  color: #fff
+  border: solid 1px #a00c07
+  +data-uri-bg('bg_button.jpg', repeat-x)
+  +text-shadow(#4f0608 1px 1px 1px)
+  +border-radius(4px)
+
+  &:hover
+    +box-shadow(#4f0608 0 0 2px)
+
+.wrap
+  max-width: 940px
+  margin: 0 auto
+  padding: 0 10px
+
+#header
+  position: relative
+  padding-top: 80px
+  margin-bottom: 25px
+
+  @media (max-width: 550px)
+    padding-top: 30px
+
+#logo img
+  max-width: 700px
+  width: 100%
+  margin: 0 auto
+  display: block
+
+#intro
+  width: 71.8085%
+  margin: 25px auto
+  font-family: $abel
+  font-size: 2.2em
+  text-align: center
+  line-height: 29px
+  color: #515151
+
+#socnet
+  width: 97px
+  margin: 0 auto
+  overflow: hidden
+
+  li
+    float: left
+    margin-left: 22px
+
+    &:first-child
+      margin-left: 0
+
+    &:hover
+      a
+        display: block
+      @each $icon in twitter, gtalk, github, rss
+        .#{$icon}
+          +data-uri-bg('i_#{$icon}.png', no-repeat)
+
+  a
+    width: 32px
+    height: 32px
+    display: block
+    +hide-text
+
+  @each $icon in twitter, gtalk, github, rss
+    .#{$icon}
+      +data-uri-bg('i_#{$icon}_off.png', no-repeat)
+
+#login-join
+  width: 100%
+  height: 35px
+  top: 0
+  position: absolute
+  background: $dark-color
+
+  ul
+    float: right
+    margin-right: 10px
+
+  li
+    float: left
+    margin: 8px 10px 10px 0
+    padding-left: 10px
+    border-left: solid 1px #626262
+
+    &:first-child
+      border-left: 0
+
+  a
+    font-family: $abel
+    font-size: 1.5em
+    color: #fff
+
+    &:hover
+      text-decoration: underline
+
+#map
+  width: 100%
+  height: 505px
+  position: relative
+  margin-top: -29px
+  +border-radius(20px)
+  border: solid 1px $border-color
+  overflow: hidden
+
+.mapbox
+  width: 100%
+  overflow: hidden
+  +border-radius(20px)
+
+  img
+    display: block
+    margin-left: -50px
+
+  a,
+    display: block
+
+#company
+  width: 38.2979%
+  height: 440px
+  top: 0
+  right: 0
+  position: absolute
+  padding: 45px 2.2% 20px 2.2%
+  border-left: solid 1px $border-color
+  background: #fff
+  +border-radius(0 20px 20px 0)
+
+  h2
+    font-family: $abel
+    font-size: 4em
+    line-height: 1
+    margin-bottom: 15px
+
+  .button
+    bottom: 20px
+    right: 5.5556%
+    position: absolute
+
+.date-loc
+  width: 100%
+  margin: 0 0 15px -5.5556%
+  padding: 10px 5.5556%
+  font-family: $abel
+  border-top: dashed 1px $border-color
+  border-bottom: dashed 1px $border-color
+
+  .date
+    font-size: 2.5em
+
+  .loc
+    margin-top: 5px
+    font-size: 1.5em
+
+.content
+  height: 224px
+  overflow: hidden
+
+  p
+    margin-bottom: 10px
+
+@media (max-width: 640px)
+  #map
+    height: auto
+
+  .mapbox
+    border-top: solid 1px $border-color
+    +border-radius(0 0 20px 20px)
+
+    img
+      max-width: 100%
+      margin: 0
+
+  #company
+    width: auto
+    height: auto
+    position: static
+    border: 0
+    +border-radius(0)
+
+  .content
+    height: auto
+
+#members
+  float: left
+  margin-bottom: 15px
+
+  ul
+    margin: 2.0468% 0 0 -2.0468%
+
+  li
+    width: 40px
+    position: relative
+    float: left
+    margin: 0 0 2.0468% 2.0468%
+
+    &:hover
+      p
+        display: block
+      img
+        opacity: 1
+
+  img
+    opacity: 0.5
+    +transition-duration(0.5s)
+    +transition-timing-function(ease-in-out)
+
+  a
+    width: 40px
+    height: 40px
+    overflow: hidden
+    display: block
+
+  p
+    min-width: 70px
+    top: 45px
+    position: absolute
+    display: none
+    padding: 5px
+    font-size: 1
+    line-height: 1em
+    text-align: center
+    color: #fff
+    background: $dark-color
+    z-index: 10
+
+  .arrow
+    width: 7px
+    height: 6px
+    top: -6px
+    left: 5px
+    position: absolute
+    +data-uri-bg('arrow.png', no-repeat)
+
+#jobboard,
+#news
+  margin-bottom: 20px
+
+#jobboard
+  width: 36.1702%
+  float: left
+  margin-right: 2.1277%
+
+#news
+  width: 61.7021%
+  float: left
+
+  article
+    margin-bottom: 20px
+
+    h1
+      line-height: 1
+
+    footer
+      margin-bottom: 15px
+      font-family: $abel
+      font-size: 1.5em
+      color: $grey-color
+
+.job
+  h2
+    margin-bottom: 10px
+    font-family: $abel
+    font-size: 1.5em
+    text-align: center
+    text-transform: uppercase
+    color: $grey-color
+
+  ul
+    margin-bottom: 20px
+
+  li
+    padding: 5px
+    border-bottom: dashed 1px $border-color
+
+    &:hover
+      background: #f5e5e5
+
+  a
+    color: $font-color
+
+    span
+      display: block
+      color: $link-color
+
+#supporters
+  clear:  left
+
+  > h1
+    margin-bottom: 25px
+
+  ul
+    overflow: hidden
+    margin: 0 0 20px -2.1277%
+
+  li
+    width: 22.595%
+    min-height: 110px
+    float: left
+    margin: 0 0 1.965% 1.965%
+    background: #e7e7e7
+    border: solid 1px #e7e7e7
+
+    @media (max-width: 880px)
+      width: 47.5%
+
+    &:hover
+      border-color: $border-color
+      +box-shadow($border-color 0 0 10px inset)
+
+      img
+        opacity: 1
+
+.image_box
+  width: 100%
+  min-height: 110px
+  position: relative
+  text-align: center
+  line-height: 110px
+  overflow: hidden
+
+  img
+    max-width: 90%
+    vertical-align: middle
