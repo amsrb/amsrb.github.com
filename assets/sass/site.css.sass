@@ -277,13 +277,22 @@ section
     font-size: 1.5em
 
 .content
-  height: 224px
-  overflow: hidden
+  height: 240px
+  overflow: auto
 
   p
     margin-bottom: 10px
 
-@media (max-width: 640px)
+    &:last-child
+      margin: 0
+
+  em
+    font-style: italic
+
+  strong
+    font-weight: bold
+
+@media (max-width: 660px)
   #map
     height: auto
 
