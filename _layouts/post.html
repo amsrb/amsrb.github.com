@@ -3,5 +3,8 @@ layout: default
 ---
 <div class="post {{page.category}}">
     <div class="date">{{ page.date | date_to_string  }}</div>
+    {% if page.category == "project" %}
+    <div class="autor">{{page.author}}</div>
+    {% endif %}
     {{ content }}
 </div>

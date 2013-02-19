@@ -3,15 +3,27 @@ title: Improve the Ams.rb website
 layout: post
 category: project
 summary: Add jobs and hacknight projects to the ams.rb website
+author: Benjamin Udink ten Cate and Johnny Eradus
 ---
 
 h1. Improve the Ams.rb website
 
-1. AMS.rb should be improved so people can post their own projects
-1. AMS.rb should be improved so people can post their own projects
-1. AMS.rb should be improved so people can post their own projects
-1. AMS.rb should be improved so people can post their own projects
+h2. I need help with
 1. AMS.rb should be improved so people can post their own projects
 2. AMS.rb should be improved to display job offerings
+1. AMS.rb should be improved so people can post their own projects.
+2. AMS.rb should be improved to display job offerings
+1. AMS.rb should be improved so people can post their own projects
+2. AMS.rb should be improved to display job offerings
+1. AMS.rb should be improved so people can post their own projects.
+
+2. AMS.rb should be improved to display job offerings
+# 1. AMS.rb should be improved so people can post their own projects
+# 2. AMS.rb should be improved to display job offerings
+# 1. AMS.rb should be improved so people can post their own projects
+2. AMS.rb should be improved to display job offerings.
+
+This file is at <a href="https://github.com/hezus/amsrb.github.com/blob/master/_posts/2013-02-19-ams-rb-website-improvements.textile)">GIThub</a>
+
 
 
