@@ -2,8 +2,14 @@
 layout: default
 title: AMS RB
 ---
-<div id="vacatures">
-<h1>Vacatures</h1>
+        <section id="vacatures">
+  <h1 class="tag">
+    <span class="tagleft"></span>
+    <span class="text">
+      <span>Vacatures</span>
+    </span>
+    <span class="tagright"></span>
+  </h1>
 <ul>
     {% for post in site.posts %}
         {% if post.category == "vacature"%}
@@ -20,4 +26,4 @@ title: AMS RB
         {% endif %}
     {% endfor %}
 </ul>
-</div>
+</section>
