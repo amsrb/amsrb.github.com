@@ -2,8 +2,8 @@
 title: A
 layout: post
 category: vacature
-summary: This is my awesome vacature
-job: Dingen doen
+company: We maken dingen
+job_title: Rails proggen senior
 logo: github.png
 ---
 <h1> my vacature</h1>

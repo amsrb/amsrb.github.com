@@ -2,18 +2,22 @@
 layout: default
 title: AMS RB
 ---
+<div id="vacatures">
 <h1>Vacatures</h1>
-{% for post in site.posts %}
-    {% if post.category == "vacature"%}
-    <li>
-        <a href="{{ post.url }}">
-            <img src="/assets/images/logo/{{post.logo}}"/>
-            <div>{{ post.title }}</div>
-            <div>{{ post.summary }}</div>
-        </a>
-        <abbr>{{ post.date | date_to_string }}</abbr>
+<ul>
+    {% for post in site.posts %}
+        {% if post.category == "vacature"%}
+        <li class="vacature">
+            <a href="{{ post.url }}">
+                <img src="/assets/images/logo/{{post.logo}}"/>
+                <div class="jobtitle">{{ post.job_title }}</div>
+                <div class="company_tagline">{{ post.company }}</div>
+            </a>
+            <abbr>{{ post.date | date_to_string }}</abbr>
 
-    </li>
+        </li>
 
-    {% endif %}
-{% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>
+</div>

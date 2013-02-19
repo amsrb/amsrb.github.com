@@ -1,8 +1,12 @@
 ---
-title: A
+title: Improve the Ams.rb website
 layout: post
 category: project
-summary: This is my awesome prioject
+summary: Add jobs and hacknight projects to the ams.rb website
 ---
-<h1> my project</h1>
-<div class="project">
+
+h1. Improve the Ams.rb website
+
+Add stuff for the website
+
+
