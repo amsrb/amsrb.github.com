@@ -1,0 +1,10 @@
+---
+title: A
+layout: post
+category: vacature
+summary: This is my awesome vacature
+job: Dingen doen
+logo: github.png
+---
+<h1> my vacature</h1>
+<div><p>test</p></div>

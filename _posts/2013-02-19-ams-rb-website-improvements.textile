@@ -1,0 +1,8 @@
+---
+title: A
+layout: post
+category: project
+summary: This is my awesome prioject
+---
+<h1> my project</h1>
+<div class="project">

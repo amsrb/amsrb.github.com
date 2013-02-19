@@ -2,27 +2,10 @@
 layout: default
 title: AMS RB
 ---
-<h1>Amsrb</h1>
+<h1>POSTS</h1>
 <section id="meetup">
-  <h1 class="tag">
-    <span class="tagleft"></span>
-    <span class="text">
-      <span>Next Meet-Up</span>
-    </span>
-    <span class="tagright"></span>
-  </h1>
-  <div id="map">
-    <div id="company">
-      <h2>New Years Bubbles</h2>
-      <div class="date-loc">
-        <p class="date">January 15, 2013</p>
-        <p class="loc">AppSignal (Vijzelstraat 72, 2.38)</p>
-      </div>
-      <div class="content">
-        <p>Happy New Year, our dear Amsterdam Rubyists! To start 2013 with a bang we'll have bubbly and other refreshments at <a href="http://appsignal.com/">AppSignal</a> (that's at the <a href="http://www.80beans.com/">80beans</a> office) on January 15. Hope to see you there!</p>
-      </div>
-      <a class="button" href="http://www.meetup.com/Amsterdam-rb/events/97439392/">Sign up at Meetup</a>
-    </div>
-    <div class="mapbox"><a href="http://maps.google.nl/maps?q=80beans,+Vijzelstraat+72,+Amsterdam&amp;hl=nl&amp;sll=52.3629809,4.8917959&amp;sspn=3.87879,3.779297&amp;hq=80beans,&amp;hnear=Vijzelstraat+72,+Amsterdam,+Noord-Holland&amp;t=m&amp;z=17"><img src="http://maps.googleapis.com/maps/api/staticmap?center=52.3629809,4.8917959&amp;zoom=14&amp;size=940x505&amp;sensor=false&amp;markers=color:blue|Vijzelstraat 72, Amsterdam" alt="map" /></a></div>
-  </div>
+  {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a><abbr>{{ post.date | date_to_string }}</abbr>
+    <div class="summary">{{ post.summary }} </div></li>
+    {% endfor %}
 </section>
