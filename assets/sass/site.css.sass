@@ -316,6 +316,12 @@ section
   .content
     height: auto
 
+.post
+  padding: 20px 0
+  
+  .logo
+    padding: 20px 0
+
 #members
   float: left
   margin-bottom: 15px
@@ -445,6 +451,47 @@ nav
     @media (max-width: 880px)
       width: 47.5%
 
+    &:hover
+      border-color: $border-color
+      +box-shadow($border-color 0 0 10px inset)
+
+      img
+        opacity: 1
+
+#vacatures
+  clear:  left
+
+  > h1
+    margin-bottom: 25px
+
+  ul
+    overflow: hidden
+    margin: 0 0 20px -2.1277%
+
+  li
+    width: 100%
+    min-height: 110px
+    float: left
+    margin: 0 0 1.965% 1.965%
+    background: #e7e7e7
+    border: solid 1px #e7e7e7
+
+    @media (max-width: 880px)
+      width: 47.5%
+
+    img
+      padding: 25px
+      float: left
+    
+    .jobtitle
+      float: left
+      font-family: $abel
+      font-size: 2.5em
+      line-height: 55px
+    
+    abbr
+      display: none
+              
     &:hover
       border-color: $border-color
       +box-shadow($border-color 0 0 10px inset)

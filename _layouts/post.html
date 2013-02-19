@@ -2,9 +2,11 @@
 layout: default
 ---
 <div class="post {{page.category}}">
-    <div class="date">{{ page.date | date_to_string  }}</div>
     {% if page.category == "project" %}
     <div class="autor">{{page.author}}</div>
     {% endif %}
+    <img class="logo" src="/assets/images/logo/{{page.logo}}"/>
+    <h1>{{ page.job_title }}</h1>
+    <div class="date">{{ page.date | date_to_string  }}</div>
     {{ content }}
 </div>
