@@ -7,6 +7,13 @@ summary: Add jobs and hacknight projects to the ams.rb website
 
 h1. Improve the Ams.rb website
 
-Add stuff for the website
+
+1. AMS.rb should be improved so people can post their own projects
+2. AMS.rb should be improved to display job offerings
+2. AMS.rb should be improved to display job offerings
+2. AMS.rb should be improved to display job offerings
+2. AMS.rb should be improved to display job offerings
+2. AMS.rb should be improved to display job offerings
+
 
 

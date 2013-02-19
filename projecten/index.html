@@ -10,10 +10,17 @@ title: AMS RB
     </span>
     <span class="tagright"></span>
   </h1>
+            <ul>
 {% for post in site.posts %}
     {% if post.category == "project"%}
-    <li><a href="{{ post.url }}">{{ post.title }}</a><abbr>{{ post.date | date_to_string }}</abbr></li>
-{{ post.summary }}
-{% endif %}
+    <li>
+        <a href="{{ post.url }}">
+            <abbr>{{ post.date | date_to_string }}</abbr>
+            {{ post.title }}
+        </a>
+
+        </li>
+    {% endif %}
 {% endfor %}
-            </section>
+</ul>
+</section>
