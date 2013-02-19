@@ -1,0 +1,31 @@
+---
+layout: default
+title: AMS RB
+---
+<section id="projects">
+  <h1 class="tag">
+    <span class="tagleft"></span>
+    <span class="text">
+      <span>Projects</span>
+    </span>
+    <span class="tagright"></span>
+  </h1>
+  <ul>
+    {% for post in site.posts %}
+        {% if post.category == "project"%}
+        <li class="project">
+            <h1>
+                <a href="{{ post.url }}">
+                {{ post.title }}
+                <abbr>{{ post.date | date_to_string }}</abbr>
+            </a>
+            </h1>
+            <h2>
+                {{ post.summary }}
+
+            </h2>
+            </li>
+        {% endif %}
+    {% endfor %}
+  </ul>
+</section>

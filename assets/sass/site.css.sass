@@ -62,7 +62,7 @@ a
 p
   font-size: $font-size
 
-h1
+h1, h2, h3, h4
   font-family: $abel
   font-size: 2.5em
 
@@ -398,10 +398,9 @@ section
       font-size: 1.5em
       color: $grey-color
 
-.job
+li.job, li.project
   h2
     margin-bottom: 10px
-    font-family: $abel
     font-size: 1.5em
     text-align: center
     text-transform: uppercase
@@ -458,7 +457,7 @@ nav
       img
         opacity: 1
 
-#vacatures
+#jobs, #projects
   clear:  left
 
   > h1
@@ -511,13 +510,31 @@ nav
     max-width: 90%
     vertical-align: middle
 
-section#projecten li a
-  font-size: 18px
-  abbr
-    font-size: 12px
-    color: #333
+section#projects
 
-.project
+  li.project
+    min-height: 70px
+    h2
+      padding: 5px
+    a
+      padding: 5px
+      color: $link-color
+      abbr
+        font-size: 12px
+        color: #333
+        display: inline
+  h2
+    text-align: left
+
+.project, .job
+  margin-bottom: 40px
+  h1
+    padding-top: 10px
+    padding-bottom: 10px
+  h2
+    padding-top: 10px
+    padding-bottom: 10px
+    font-size: 20px
   p
     margin-top: 20px
     margin-bottom: 20px

@@ -2,21 +2,21 @@
 layout: default
 title: AMS RB
 ---
-        <section id="vacatures">
+<section id="jobs">
   <h1 class="tag">
     <span class="tagleft"></span>
     <span class="text">
-      <span>Vacatures</span>
+      <span>Jobs</span>
     </span>
     <span class="tagright"></span>
   </h1>
-<ul>
+  <ul>
     {% for post in site.posts %}
-        {% if post.category == "vacature"%}
-        <li class="vacature">
+        {% if post.category == "job"%}
+        <li class="job">
             <a href="{{ post.url }}">
                 <img src="/assets/images/logo/{{post.logo}}"/>
-                <div class="jobtitle">{{ post.job_title }} <br><span><b>{{ post.company }}</b> - {{ post.slogan }}</span></div>
+                <div class="jobtitle">{{ post.title }} <br><span><b>{{ post.company }}</b> - {{ post.slogan }}</span></div>
             </a>
             <abbr>{{ post.date | date_to_string }}</abbr>
 
@@ -24,5 +24,5 @@ title: AMS RB
 
         {% endif %}
     {% endfor %}
-</ul>
+  </ul>
 </section>

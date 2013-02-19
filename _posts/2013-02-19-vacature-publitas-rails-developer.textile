@@ -1,10 +1,9 @@
 ---
-title: A
-layout: post
-category: vacature
+layout: job
+category: job
 company: Publitas.com
 slogan: We are reinventing the digital catalog
-job_title: Ruby on Rails Developer
+title: Ruby on Rails Developer
 logo: publitas.png
 ---
 

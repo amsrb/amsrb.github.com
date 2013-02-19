@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<div class="post {{page.category}}">
+    <div class="autor">{{page.author}}</div>
+    <div class="date">{{ page.date | date_to_string  }}</div>
+    {{ content }}
+</div>
