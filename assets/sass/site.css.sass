@@ -62,7 +62,7 @@ a
 p
   font-size: $font-size
 
-h1
+h1, h2, h3, h4
   font-family: $abel
   font-size: 2.5em
 
@@ -165,6 +165,8 @@ section
   width: 97px
   margin: 0 auto
   overflow: hidden
+  margin-top: -20px
+  padding-bottom: 20px
 
   li
     float: left
@@ -314,6 +316,12 @@ section
   .content
     height: auto
 
+.post
+  padding: 20px 0
+  
+  .logo
+    padding: 20px 0
+
 #members
   float: left
   margin-bottom: 15px
@@ -390,10 +398,9 @@ section
       font-size: 1.5em
       color: $grey-color
 
-.job
+li.job, li.project
   h2
     margin-bottom: 10px
-    font-family: $abel
     font-size: 1.5em
     text-align: center
     text-transform: uppercase
@@ -416,6 +423,12 @@ section
       display: block
       color: $link-color
 
+nav
+  font-family: $abel 
+  font-size: 20px
+  padding: 20px 0
+  text-align: center
+    
 #supporters
   clear:  left
 
@@ -444,6 +457,47 @@ section
       img
         opacity: 1
 
+#jobs, #projects
+  clear:  left
+
+  > h1
+    margin-bottom: 25px
+
+  ul
+    overflow: hidden
+    margin: 0 0 20px -2.1277%
+
+  li
+    width: 100%
+    min-height: 110px
+    float: left
+    margin: 0 0 1.965% 1.965%
+    background: #e7e7e7
+    border: solid 1px #e7e7e7
+
+    @media (max-width: 880px)
+      width: 47.5%
+
+    img
+      padding: 25px
+      float: left
+    
+    .jobtitle
+      float: left
+      font-family: $abel
+      font-size: 2.5em
+      line-height: 55px
+    
+    abbr
+      display: none
+              
+    &:hover
+      border-color: $border-color
+      +box-shadow($border-color 0 0 10px inset)
+
+      img
+        opacity: 1
+
 .image_box
   width: 100%
   min-height: 110px
@@ -455,3 +509,32 @@ section
   img
     max-width: 90%
     vertical-align: middle
+
+section#projects
+
+  li.project
+    min-height: 70px
+    h2
+      padding: 5px
+    a
+      padding: 5px
+      color: $link-color
+      abbr
+        font-size: 12px
+        color: #333
+        display: inline
+  h2
+    text-align: left
+
+.project, .job
+  margin-bottom: 40px
+  h1
+    padding-top: 10px
+    padding-bottom: 10px
+  h2
+    padding-top: 10px
+    padding-bottom: 10px
+    font-size: 20px
+  p
+    margin-top: 20px
+    margin-bottom: 20px

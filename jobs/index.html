@@ -1,0 +1,28 @@
+---
+layout: default
+title: AMS RB
+---
+<section id="jobs">
+  <h1 class="tag">
+    <span class="tagleft"></span>
+    <span class="text">
+      <span>Jobs</span>
+    </span>
+    <span class="tagright"></span>
+  </h1>
+  <ul>
+    {% for post in site.posts %}
+        {% if post.category == "job"%}
+        <li class="job">
+            <a href="{{ post.url }}">
+                <img src="/assets/images/logo/{{post.logo}}"/>
+                <div class="jobtitle">{{ post.title }} <br><span><b>{{ post.company }}</b> - {{ post.slogan }}</span></div>
+            </a>
+            <abbr>{{ post.date | date_to_string }}</abbr>
+
+        </li>
+
+        {% endif %}
+    {% endfor %}
+  </ul>
+</section>
