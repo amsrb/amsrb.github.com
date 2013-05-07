@@ -146,6 +146,11 @@ section
   @media (max-width: 550px)
     padding-top: 30px
 
+  nav
+    font-size: 24px
+    a
+      padding: 0 20px
+
 #logo img
   max-width: 700px
   width: 100%
@@ -166,7 +171,6 @@ section
   margin: 0 auto
   overflow: hidden
   margin-top: -20px
-  padding-bottom: 20px
 
   li
     float: left
@@ -318,7 +322,7 @@ section
 
 .post
   padding: 20px 0
-  
+
   .logo
     padding: 20px 0
 
@@ -424,11 +428,16 @@ li.job, li.project
       color: $link-color
 
 nav
-  font-family: $abel 
+  font-family: $abel
   font-size: 20px
   padding: 20px 0
   text-align: center
-    
+
+footer
+  p
+    text-align: center
+    padding: 20px
+
 #supporters
   clear:  left
 
@@ -465,32 +474,37 @@ nav
 
   ul
     overflow: hidden
-    margin: 0 0 20px -2.1277%
+    margin: 0 0 20px 0
 
   li
     width: 100%
     min-height: 110px
     float: left
-    margin: 0 0 1.965% 1.965%
     background: #e7e7e7
     border: solid 1px #e7e7e7
 
     @media (max-width: 880px)
       width: 47.5%
 
+    a
+      display: block
+      overflow: hidden
+
     img
       padding: 25px
+      padding-right: 0
       float: left
-    
+
     .jobtitle
       float: left
       font-family: $abel
       font-size: 2.5em
       line-height: 55px
-    
+      padding: 0 25px
+
     abbr
       display: none
-              
+
     &:hover
       border-color: $border-color
       +box-shadow($border-color 0 0 10px inset)
@@ -518,7 +532,6 @@ section#projects
       padding: 5px
     a
       padding: 5px
-      color: $link-color
       abbr
         font-size: 12px
         color: #333
@@ -526,11 +539,17 @@ section#projects
   h2
     text-align: left
 
-.project, .job
-  margin-bottom: 40px
+.post.project, .post.job
+  margin: 0 80px 20px 80px
   h1
     padding-top: 10px
     padding-bottom: 10px
+  h1.title
+    float: left
+  a.button
+    float: right
+  .date
+    clear: both
   h2
     padding-top: 10px
     padding-bottom: 10px

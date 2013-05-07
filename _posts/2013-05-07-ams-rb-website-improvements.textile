@@ -4,12 +4,8 @@ layout: project
 category: project
 summary: Rewrite the ams.rb website in Ruby on Rails
 author: Benjamin Udink ten Cate and Johnny Eradus
+github: https://github.com/jhny/amsrb
 ---
-
-h1. Improve the Ams.rb website
-
-<h2><a href="https://github.com/jhny/amsrb" target="_blank">Github</a></h2>
-
 
 h2. Project description
 

@@ -12,19 +12,12 @@ title: AMS RB
   </h1>
   <ul>
     {% for post in site.posts %}
-        {% if post.category == "project"%}
+        {% if post.category == "project" %}
         <li class="project">
-            <h1>
-                <a href="{{ post.url }}">
-                {{ post.title }}
-                <abbr>{{ post.date | date_to_string }}</abbr>
+            <a href="{{ post.url }}">
+                <div class="jobtitle">{{ post.title }}<br><span>{{ post.summary }}</span></div>
             </a>
-            </h1>
-            <h2>
-                {{ post.summary }}
-
-            </h2>
-            </li>
+        </li>
         {% endif %}
     {% endfor %}
   </ul>

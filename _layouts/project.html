@@ -1,8 +1,16 @@
 ---
 layout: default
 ---
+<h1 class="tag">
+  <span class="tagleft"></span>
+  <span class="text">
+    <span>by {{ page.author }}</span>
+  </span>
+  <span class="tagright"></span>
+</h1>
 <div class="post {{page.category}}">
-    <div class="autor">{{page.author}}</div>
+    <h1 class="title">{{ page.title }}</h1>
+    <a class="button" href="{{ page.github }}" target="_blank">Get involved</a>
     <div class="date">{{ page.date | date_to_string  }}</div>
     {{ content }}
 </div>

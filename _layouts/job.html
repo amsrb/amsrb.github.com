@@ -1,9 +1,19 @@
 ---
 layout: default
 ---
+<h1 class="tag">
+  <span class="tagleft"></span>
+  <span class="text">
+    <span>{{ page.company }}</span>
+  </span>
+  <span class="tagright"></span>
+</h1>
 <div class="post {{page.category}}">
     <img class="logo" src="/assets/images/logo/{{page.logo}}"/>
-    <h1>{{ page.title }}</h1>
+    <!-- weird rendering issue without this nasty inline clear in chrome -->
+    <br style="clear:both">
+    <h1 class="title">{{ page.title }}</h1>
+    <a class="button" href="{{ page.website }}" target="_blank">Apply for this job</a>
     <div class="date">{{ page.date | date_to_string  }}</div>
     {{ content }}
 </div>
