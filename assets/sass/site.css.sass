@@ -470,6 +470,13 @@ footer
 
 #jobs, #projects
   clear:  left
+  &:after
+    content: ""
+    clear: both
+    display: block
+
+  a.button
+    float: right
 
   > h1
     margin-bottom: 25px
@@ -559,3 +566,6 @@ section#projects
   p
     margin-top: 20px
     margin-bottom: 20px
+
+.clear
+  clear: both
