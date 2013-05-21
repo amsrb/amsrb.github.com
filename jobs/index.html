@@ -12,17 +12,18 @@ title: AMS RB
   </h1>
   <ul>
     {% for post in site.posts %}
-        {% if post.category == "job"%}
+      {% if post.category == "job"%}
         <li class="job">
-            <a href="{{ post.url }}">
-                <img src="/assets/images/logo/{{post.logo}}"/>
-                <div class="jobtitle">{{ post.title }} <br><span><b>{{ post.company }}</b> - {{ post.slogan }}</span></div>
-            </a>
-            <abbr>{{ post.date | date_to_string }}</abbr>
-
+          <a href="{{ post.url }}">
+            <img src="/assets/images/logo/{{post.logo}}"/>
+            <div class="jobtitle">{{ post.title }} <br><span><b>{{ post.company }}</b> - {{ post.slogan }}</span></div>
+          </a>
+          <abbr>{{ post.date | date_to_string }}</abbr>
         </li>
-
-        {% endif %}
+      {% endif %}
     {% endfor %}
   </ul>
+  <a href='mailto:contact@amsrb.org' class='button'>
+    Add job posting
+  </a>
 </section>
