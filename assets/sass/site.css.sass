@@ -143,13 +143,15 @@ section
   padding-top: 80px
   margin-bottom: 25px
 
-  @media (max-width: 550px)
+  @media (max-width: 650px)
     padding-top: 30px
 
   nav
     font-size: 24px
     a
       padding: 0 20px
+      @media (max-width: 350px)
+        padding: 0 10px
 
 #logo img
   max-width: 700px
@@ -538,6 +540,9 @@ section#projects
 
 .post.project, .post.job
   margin: 0 80px 20px 80px
+  @media (max-width: 650px)
+    margin: 0 20px 20px 20px
+
   h1
     padding-top: 10px
     padding-bottom: 10px
