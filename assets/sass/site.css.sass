@@ -286,7 +286,6 @@ section
 
 .content
   height: 240px
-  overflow: auto
 
   p
     margin-bottom: 10px
@@ -299,6 +298,26 @@ section
 
   strong
     font-weight: bold
+
+  .speaker
+    min-height: 60px
+    padding-bottom: 10px
+    &:after
+      content: ""
+      clear: both
+      display: block
+    img
+      position: absolute
+    span
+      display: block
+      margin-left: 65px
+      font-size: 12px
+      line-height: 16px
+      &.name
+        font-weight: bold
+      &.bio
+      &.talk
+        font-style: italic
 
 @media (max-width: 660px)
   #map
