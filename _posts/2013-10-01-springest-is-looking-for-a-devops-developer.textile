@@ -1,0 +1,27 @@
+---
+layout: job
+category: job
+company: Springest
+slogan: Shows you the way in personal growth and development
+title: Springest is looking for a DevOps developer (full-time
+logo: springest.png
+website: http://devblog.springest.com/springest-is-looking-for-a-devops-developer
+---
+ 
+"Springest":http://www.springest.nl is a course comparison website with sites in "NL":http://www.springest.nl, "UK":http://www.springest.co.uk, "BE":http://nl.springest.be, "RU":http://www.springest.ru, and an international ."COM":http://www.springest.com. Together we host a rapidly growing 110,000 published courses that users can search, compare and book. The sites run on a couple of Ruby 2.0 Rails and Sinatra apps. Our stack consists of Postgres, Mongo, Redis, Solr, RabbitMQ, Memcached and more.
+
+We are looking for a DevOps developer who is experienced with "Chef":http://www.opscode.com/chef/, which we currently use to provision our server stack. We are currently hosted on "Rackspace cloud servers":http://www.rackspace.co.uk/cloud/servers, but one of your first projects will consist of making the move to "AWS":http://aws.amazon.com/. You should have solid knowledge of Chef and AWS, because you will be independently rebuilding our Chef recipes on the AWS platform. You will have the freedom to design and implement the solution yourself. Besides that, you will be helping out our development team (8 developers by coding backend features for our apps. If you are not experienced enough with Ruby to be a full blown dev, we are happy to teach you to become a Ruby pro!
+
+<!--more-->
+
+!https://fa6c6b24d0bb3c1a5c10-8124a89bf2dae5cac399ed58efaea9c5.ssl.cf1.rackcdn.com/2013/10/springest-morning-standups-pingpong.png!
+
+Your "colleagues":http://www.springest.nl/over-springest/team are a happy bunch of 20 young people between 20 and 40 y/o in a cool office in the "center of Amsterdam":http://www.rokin75.com/. Although Springest is already five years old, profitable, and growing, we still have that startup vibe that you love. You’ll get whatever gear you need to do your job for us and we ask of you to be independent and always be looking for ways to improve. In order to do that you can visit and/or organize meet-ups, conferences, and courses. Our Holacracy management strategy creates a flat organization in which we make all decisions together as a team.
+
+Contact Wouter de Vos ("wouter@springest.com":mailto:wouter@springest.com) for questions and applications. Please send me your resume and/or a link to your complete "LinkedIn":http://www.linkedin.com/in/wouterdevos profile.
+
+Checkout these links as well:
+
+- "Github":https://github.com/Springest
+- "Coderwall":https://coderwall.com/team/springest
+- "LinkedIn":http://www.linkedin.com/company/springest
