@@ -10,7 +10,6 @@ $abel: 'Abel', sans-serif
 $font-size: 1.3em
 // $sprite: sprite-map("sprite/*.png", $spacing: 15px)
 
-// Compass imports & mixins
 @import "compass"
 @import "compass/reset"
 
@@ -169,34 +168,7 @@ section
   color: #515151
 
 #socnet
-  width: 97px
-  margin: 0 auto
-  overflow: hidden
-  margin-top: -20px
-
-  li
-    float: left
-    margin-left: 22px
-
-    &:first-child
-      margin-left: 0
-
-    &:hover
-      a
-        display: block
-      @each $icon in twitter, gtalk, github, rss
-        .#{$icon}
-          +data-uri-bg('i_#{$icon}.png', no-repeat)
-
-  a
-    width: 32px
-    height: 32px
-    display: block
-    +hide-text
-
-  @each $icon in twitter, gtalk, github, rss
-    .#{$icon}
-      +data-uri-bg('i_#{$icon}_off.png', no-repeat)
+  text-align: center
 
 #login-join
   width: 100%
