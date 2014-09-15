@@ -3,7 +3,7 @@ layout: job
 category: job
 company: Springest
 slogan: Shows you the way in personal growth and development
-title: Springest is looking for a DevOps developer (full-time
+title: Springest is looking for a DevOps developer (full-time)
 logo: springest.png
 website: http://devblog.springest.com/springest-is-looking-for-a-devops-developer
 ---
