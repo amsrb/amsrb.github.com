@@ -2,3 +2,4 @@ gems:
   - jekyll-compass
 sass:
   style: compressed
+markdown: kramdown

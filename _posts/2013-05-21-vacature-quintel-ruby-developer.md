@@ -1,0 +1,50 @@
+---
+layout: job
+category: job
+company: quintel.com
+slogan: Building the Energy Transition Model
+title: Ruby Developer
+logo: quintel.png
+website: https://www.quintel.com/jobs/developer
+---
+
+WE ARE LOOKING FOR A DEVELOPER WHO:
+
+\- likes out-of-the-box thinking and inventing new solutions;
+
+\- is always looking to improve an existing code base;
+
+\- has a bit of OCD for code quality;
+
+\- prefers to re-use rather than to program;
+
+\- can switch from big picture to implementation details;
+
+\- can switch between working independently to a team;  
+- works (or wants to learn how to be) test driven, or ‘documentation
+driven’;
+
+CODE BASE  
+Our codebase has something for everyone: 30% hardcore Ruby, 30%
+Javascript, (backbone.js, CoffeeScript, Meteor.js, etc.) 30% Rails and
+10% other code. We have DSLs (for our non-programmers), APIs, and fast
+EC2 instances for calculations.
+
+THINGS WE HAVE DONE
+
+\- Git as a database;
+
+\- Open source projects, such as our graph library;
+
+\- Custom graph query language to extract data from the model;
+
+\- Massive processing within a Rails request (think thousands of Ruby
+objects  
+calculating energy flows);
+
+\- Visualizations with D3;  
+- …much more!
+
+LOCATION  
+You live in (ordered by preference): Netherlands, Europe, World. You are
+ready to move to Amsterdam and work from our offices in the center.
