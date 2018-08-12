@@ -3,3 +3,9 @@ gems:
 sass:
   style: compressed
 markdown: kramdown
+exclude:
+  - README.md
+  - config.rb
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
