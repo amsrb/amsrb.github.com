@@ -58,7 +58,8 @@ a
   text-decoration: none
   color: $link-color
 
-p
+p,
+li
   font-size: $font-size
 
 h1, h2, h3, h4
@@ -573,23 +574,31 @@ section#projects
 section.coc
   color: #333
 
-  h1 h2, h3, h4
+  h1
+    margin-bottom: 1em
+    font-size: 3em
+
+  h2, h3, h4
+    margin-bottom: 5px
+
+  h3, h4
     font-family: $abel
     font-size: 1.5em
 
-  h1
-    font-size: 3em
-    padding-bottom: 1em
+  p,
+  ul
+    & + h2, + h3, + h4
+      margin-top: 20px
 
   p
     padding-top: .5em
-    margin-bottom: 1em!important
-    max-width: 40em
+    margin-bottom: 1em !important
 
   ul
-    font-weight: 1.1
+    margin-bottom: 10px
     padding-left: 2em
+    list-style-type: disc
+
     li
       padding-bottom: 0.2em
-      font-size: 1.4em
       color: #000
