@@ -1,7 +1,8 @@
 plugins:
-  - jekyll-compass
+  - generator_scss
 sass:
   style: compressed
+  sass_dir: _sass
 markdown: kramdown
 exclude:
   - README.md

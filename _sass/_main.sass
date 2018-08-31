@@ -10,8 +10,7 @@ $abel: 'Abel', sans-serif
 $font-size: 1.3em
 // $sprite: sprite-map("sprite/*.png", $spacing: 15px)
 
-@import "compass"
-@import "compass/reset"
+@import "reset"
 
 @mixin hide
   left: -9999px
@@ -75,7 +74,7 @@ h1, h2, h3, h4
     text-align: center
     line-height: 38px
     color: #fff
-    +text-shadow(#4f0608 1px 1px 1px)
+    /* +text-shadow(#4f0608 1px 1px 1px) */
     z-index: 10
 
     > span
@@ -125,12 +124,12 @@ section
   text-transform: uppercase
   color: #fff
   border: solid 1px #a00c07
-  +data-uri-bg('bg_button.jpg', repeat-x)
-  +text-shadow(#4f0608 1px 1px 1px)
-  +border-radius(4px)
+  /* +data-uri-bg('bg_button.jpg', repeat-x) */
+  /* +text-shadow(#4f0608 1px 1px 1px) */
+  /* +border-radius(4px) */
 
   &:hover
-    +box-shadow(#4f0608 0 0 2px)
+    /* +box-shadow(#4f0608 0 0 2px) */
 
 .wrap
   max-width: 940px
@@ -211,14 +210,14 @@ section
   width: 100%
   height: 505px
   position: relative
-  +border-radius(20px)
+  /* +border-radius(20px) */
   border: solid 1px $border-color
   overflow: hidden
 
 .mapbox
   width: 100%
   overflow: hidden
-  +border-radius(20px)
+  /* +border-radius(20px) */
 
   img
     display: block
@@ -236,7 +235,7 @@ section
   padding: 20px 2.2% 20px 2.2%
   border-left: solid 1px $border-color
   background: #fff
-  +border-radius(0 20px 20px 0)
+  /* +border-radius(0 20px 20px 0) */
 
   h2
     font-family: $abel
@@ -305,7 +304,7 @@ section
 
   .mapbox
     border-top: solid 1px $border-color
-    +border-radius(0 0 20px 20px)
+    /* +border-radius(0 0 20px 20px) */
 
     img
       max-width: 100%
@@ -316,7 +315,7 @@ section
     height: auto
     position: static
     border: 0
-    +border-radius(0)
+    /* +border-radius(0) */
 
   .content
     height: auto
@@ -348,8 +347,8 @@ section
 
   img
     opacity: 0.5
-    +transition-duration(0.5s)
-    +transition-timing-function(ease-in-out)
+    /* +transition-duration(0.5s) */
+    /* +transition-timing-function(ease-in-out) */
 
   a
     width: 40px
@@ -463,7 +462,7 @@ footer
 
     &:hover
       border-color: $border-color
-      +box-shadow($border-color 0 0 10px inset)
+      /* +box-shadow($border-color 0 0 10px inset) */
 
       img
         opacity: 1
@@ -514,7 +513,7 @@ footer
 
     &:hover
       border-color: $border-color
-      +box-shadow($border-color 0 0 10px inset)
+      /* +box-shadow($border-color 0 0 10px inset) */
 
       img
         opacity: 1
