@@ -10,8 +10,7 @@ $abel: 'Abel', sans-serif
 $font-size: 1.3em
 // $sprite: sprite-map("sprite/*.png", $spacing: 15px)
 
-@import "compass"
-@import "compass/reset"
+@import "reset"
 
 @mixin hide
   left: -9999px
@@ -65,49 +64,66 @@ h1, h2, h3, h4
   font-family: $abel
   font-size: 2.5em
 
-  &.tag
-    width: 92.2340%
-    height: 52px
+h1
+  &.ribbon
     position: relative
-    margin: 0 auto
-    font-family: $leckerli
+    margin: 0 auto 25px auto
+    width: 85%
+    height: 40px
+
+    color: #fff
     font-size: 2.3em
     text-align: center
-    line-height: 38px
-    color: #fff
-    +text-shadow(#4f0608 1px 1px 1px)
-    z-index: 10
+    line-height: 40px
+    background-color: #a32128
+    background: linear-gradient(#921D24, #A12128, #921D24)
 
-    > span
-      height: 52px
-      top: 0
+    &:before,
+    &:after
+      content: ""
       position: absolute
-      display: inline-block
+      bottom: -5px
+      display: block
+      border: 20px solid #871A1E
+      z-index: -2
 
-    .text
+    &:before
+      left: -33px
+      border-right-width: 26px
+      border-left-color: transparent
+      box-shadow: 10px 1px 10px #aaa
+
+    &:after
+      right: -33px
+      border-left-width: 26px
+      border-right-color: transparent
+      box-shadow: -10px 1px 10px #aaa
+
+    .ribbon-content
       position: relative
       display: block
-      padding: 0 57px 0 49px
+      padding: 0px 20px
+      text-align: center
+      text-shadow: #4f0608 1px 1px 1px
+      box-shadow: 0 2px 3px #1a1a1a
 
-      > span
+      &:before,
+      &:after
+        content: ""
+        position: absolute
+        bottom: -5px
         display: block
-        height: 52px
-        +data-uri-bg('bg_tag.png', top center repeat-x)
+        border-style: solid
+        border-color: #370507 transparent transparent transparent
+        z-index: 10
 
-        @media (max-width: 435px)
-          span
-            display: none
+      &:before
+        left: 0
+        border-width: 5px 0 0 13px
 
-    .tagleft
-      left: 0
-      width: 49px
-      z-index: 10
-      +data-uri-bg('bg_tag_l.png', top center no-repeat)
-
-    .tagright
-      right: 0
-      width: 57px
-      +data-uri-bg('bg_tag_r.png', top center no-repeat)
+      &:after
+        right: 0
+        border-width: 5px 13px 0 0
 
 section > h1
   margin-bottom: 15px
@@ -117,20 +133,21 @@ section
   margin-bottom: 40px
 
 .button
-  padding: 0 10px
+  padding: 8px 10px 7px 10px
   display: inline-block
-  line-height: 35px
   font-size: 1.5em
   font-weight: bold
   text-transform: uppercase
   color: #fff
-  border: solid 1px #a00c07
-  +data-uri-bg('bg_button.jpg', repeat-x)
-  +text-shadow(#4f0608 1px 1px 1px)
-  +border-radius(4px)
+  text-shadow: #4f0608 1px 1px 1px
+  background-color: #a00c07
+  background: linear-gradient(#db4b54, #a00c07)
+  border: 1px solid #a00c07
+  border-radius: 4px
 
   &:hover
-    +box-shadow(#4f0608 0 0 2px)
+    box-shadow: 0 2px 5px #4f0608 inset
+    transition: all 0.2s ease-out
 
 .wrap
   max-width: 940px
@@ -146,9 +163,10 @@ section
     padding-top: 30px
 
   nav
-    font-size: 24px
     a
       padding: 0 20px
+      font-size: 24px
+
       @media (max-width: 350px)
         padding: 0 10px
 
@@ -211,14 +229,14 @@ section
   width: 100%
   height: 505px
   position: relative
-  +border-radius(20px)
+  border-radius: 20px
   border: solid 1px $border-color
   overflow: hidden
 
 .mapbox
   width: 100%
   overflow: hidden
-  +border-radius(20px)
+  border-radius: 20px
 
   img
     display: block
@@ -236,7 +254,7 @@ section
   padding: 20px 2.2% 20px 2.2%
   border-left: solid 1px $border-color
   background: #fff
-  +border-radius(0 20px 20px 0)
+  border-radius: 0 20px 20px 0
 
   h2
     font-family: $abel
@@ -295,7 +313,6 @@ section
       line-height: 16px
       &.name
         font-weight: bold
-      &.bio
       &.talk
         font-style: italic
 
@@ -305,7 +322,7 @@ section
 
   .mapbox
     border-top: solid 1px $border-color
-    +border-radius(0 0 20px 20px)
+    border-radius: 0 0 20px 20px
 
     img
       max-width: 100%
@@ -316,7 +333,7 @@ section
     height: auto
     position: static
     border: 0
-    +border-radius(0)
+    border-radius: 0
 
   .content
     height: auto
@@ -348,8 +365,8 @@ section
 
   img
     opacity: 0.5
-    +transition-duration(0.5s)
-    +transition-timing-function(ease-in-out)
+    transition-duration: 0.5s
+    transition-timing-function: ease-in-out
 
   a
     width: 40px
@@ -463,7 +480,7 @@ footer
 
     &:hover
       border-color: $border-color
-      +box-shadow($border-color 0 0 10px inset)
+      box-shadow: $border-color 0 0 10px inset
 
       img
         opacity: 1
@@ -514,7 +531,7 @@ footer
 
     &:hover
       border-color: $border-color
-      +box-shadow($border-color 0 0 10px inset)
+      box-shadow: $border-color 0 0 10px inset
 
       img
         opacity: 1
@@ -602,4 +619,3 @@ section.coc
     li
       padding-bottom: 0.2em
       color: #000
-      font-size: $font-size
