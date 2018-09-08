@@ -1,0 +1,59 @@
+.header
+  position: relative
+  padding-top: 80px
+  margin-bottom: 25px
+
+  img
+    display: block
+    margin: 0 auto
+    width: 100%
+    max-width: 700px
+
+  p
+    width: 71.8085%
+    margin: 25px auto
+    font-family: $abel
+    font-size: 2.2em
+    text-align: center
+    line-height: 29px
+    color: #515151
+
+  // Max logo fit
+  @media (max-width: 760px)
+    padding-top: 30px
+    img
+      max-width: 90%
+
+  .navigation
+    text-transform: uppercase
+
+    li
+      display: inline-block
+      font-size: 24px
+      line-height: 32px
+
+      &:after
+        content: "|"
+
+      &:last-child
+        &:after
+          content: ""
+
+    a
+      padding: 0 20px
+
+
+    @media (max-width: 450px)
+      ul
+        text-align: left
+        list-style: disclosure-closed
+        padding-left: 30px
+
+      li
+        display: list-item
+        &:after
+          content: ""
+
+      a
+        padding: 0
+        text-decoration: underline
