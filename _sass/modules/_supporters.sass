@@ -1,18 +1,17 @@
 .supporters
   margin-bottom: 10px
-  clear:  left
+  clear: left
 
   ul
     overflow: hidden
-    margin: 0 0 0 -2.1277%
 
   li
-    width: 22.595%
-    min-height: 110px
     float: left
     margin: 0 0 1.965% 1.965%
-    background: #e7e7e7
-    border: solid 1px #e7e7e7
+    width: 22.595%
+    min-height: 110px
+    background-color: #e7e7e7
+    border: 1px solid #e7e7e7
 
     @media (max-width: 880px)
       width: 47.5%
@@ -21,5 +20,14 @@
       border-color: $border-color
       box-shadow: $border-color 0 0 10px inset
 
-      img
-        opacity: 1
+  .image-box
+    width: 100%
+    min-height: 110px
+    position: relative
+    text-align: center
+    line-height: 110px
+    overflow: hidden
+
+    img
+      max-width: 90%
+      vertical-align: middle
