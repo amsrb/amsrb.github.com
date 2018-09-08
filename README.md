@@ -1,21 +1,23 @@
-AMS.rb
-================================
+# Amsterdam.rb website
 
-Create a new Project
---------------------------------
+## Installation
 
-1. Fork this repo
-2. Copy /_posts/2013-02-19-ams-rb-website-improvements.textile
-3. Modify the file to reflect the awesome hacknight project you are working on and need a little help with
-4. Check how it looks by running `jekyll serve --watch` and checking out
-   http://localhost:4000/
-5. Send a pullrequest to merge it to master repo
+1. Fork this repo.
+2. Install the bundle: `bundle install`
 
-Add a Job offering
---------------------------------
+## Usage
 
-1. Fork this repo
-2. Copy /_posts/2013-02-19-vacature-publitas-rails-developer.textile
-3. Modify the file to reflect the job or project
-4. Add logo to /assets/images/logo if necessary
-5. Send a pullrequest to merge it to master repo
+Run Jekyll with "watch" on, so it will track file updates you make on reload.
+
+```
+bundle exec jekyll serve --watch
+```
+
+## Add a job offering
+
+1. Fork this repository.
+2. Copy any previous posting in `/_posts/`.
+3. Modify the file to reflect the job listing.
+4. Add your company logo to `/assets/images/logo` for the posting.
+5. Send a Pull Request to merge it to master repository.
+6. Wait for it to be deployed.
