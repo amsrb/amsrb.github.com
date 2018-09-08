@@ -130,6 +130,8 @@ section > h1
 
 section
   margin-bottom: 40px
+  &:last-of-type
+    margin-bottom: 0
 
 .button
   padding: 8px 10px 7px 10px
@@ -183,9 +185,6 @@ section
   text-align: center
   line-height: 29px
   color: #515151
-
-#socnet
-  text-align: center
 
 #map
   width: 100%
@@ -414,11 +413,6 @@ nav
   padding: 20px 0
   text-align: center
 
-footer
-  p
-    text-align: center
-    padding: 20px
-
 #supporters
   clear:  left
 
@@ -581,4 +575,6 @@ section.coc
     li
       padding-bottom: 0.2em
       color: #000
+
+@import "components/footer"
 @import "modules/slack"
