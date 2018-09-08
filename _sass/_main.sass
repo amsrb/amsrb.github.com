@@ -10,6 +10,7 @@ $abel: 'Abel', sans-serif
 $font-size: 1.3em
 
 @import "reset"
+@import "typography"
 
 @mixin hide
   left: -9999px
@@ -50,79 +51,6 @@ input[type="submit"],
 button
   cursor: pointer
   overflow: visible
-
-// Text styling.
-a
-  text-decoration: none
-  color: $link-color
-
-p
-  font-size: $font-size
-
-h1, h2, h3, h4
-  font-family: $abel
-  font-size: 2.5em
-
-h1
-  &.ribbon
-    position: relative
-    margin: 0 auto 25px auto
-    width: 85%
-    height: 40px
-
-    color: #fff
-    font-size: 2.3em
-    text-align: center
-    line-height: 40px
-    background-color: #a32128
-    background: linear-gradient(#921D24, #A12128, #921D24)
-
-    &:before,
-    &:after
-      content: ""
-      position: absolute
-      bottom: -5px
-      display: block
-      border: 20px solid #871A1E
-      z-index: -2
-
-    &:before
-      left: -33px
-      border-right-width: 26px
-      border-left-color: transparent
-      box-shadow: 10px 1px 10px #aaa
-
-    &:after
-      right: -33px
-      border-left-width: 26px
-      border-right-color: transparent
-      box-shadow: -10px 1px 10px #aaa
-
-    .ribbon-content
-      position: relative
-      display: block
-      padding: 0px 20px
-      text-align: center
-      text-shadow: #4f0608 1px 1px 1px
-      box-shadow: 0 2px 3px #1a1a1a
-
-      &:before,
-      &:after
-        content: ""
-        position: absolute
-        bottom: -5px
-        display: block
-        border-style: solid
-        border-color: #370507 transparent transparent transparent
-        z-index: 10
-
-      &:before
-        left: 0
-        border-width: 5px 0 0 13px
-
-      &:after
-        right: 0
-        border-width: 5px 13px 0 0
 
 section > h1
   margin-bottom: 15px
@@ -577,4 +505,5 @@ section.coc
       color: #000
 
 @import "components/footer"
+@import "components/ribbon"
 @import "modules/slack"
