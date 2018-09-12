@@ -40,111 +40,6 @@ section
   margin: 0 auto
   padding: 0 10px
 
-.post
-  padding: 20px 0
-
-  .logo
-    padding: 20px 0
-
-li.job
-  margin-bottom: 10px
-  h2
-    margin-bottom: 10px
-    font-size: 1.5em
-    text-align: center
-    text-transform: uppercase
-    color: $grey-color
-
-  ul
-    margin-bottom: 20px
-
-  li
-    padding: 5px
-    border-bottom: dashed 1px $border-color
-
-    &:hover
-      background: #f5e5e5
-
-  a
-    color: $font-color
-
-    span
-      display: block
-      color: $link-color
-
-#jobs
-  clear:  left
-  &:after
-    content: ""
-    clear: both
-    display: block
-
-  a.button
-    float: right
-
-  > h1
-    margin-bottom: 25px
-
-  ul
-    overflow: hidden
-    margin: 0 0 20px 0
-
-  li
-    width: 100%
-    min-height: 110px
-    float: left
-    background: #e7e7e7
-    border: solid 1px #e7e7e7
-
-    a
-      display: block
-      overflow: hidden
-
-    img
-      padding: 25px
-      padding-right: 0
-      float: left
-      max-width: 200px
-
-    .jobtitle
-      float: left
-      font-family: $abel
-      font-size: 2.5em
-      line-height: 55px
-      padding: 0 25px
-
-    abbr
-      display: none
-
-    &:hover
-      border-color: $border-color
-      box-shadow: $border-color 0 0 10px inset
-
-      img
-        opacity: 1
-
-.post.job
-  margin: 0 80px 20px 80px
-  @media (max-width: 650px)
-    margin: 0 20px 20px 20px
-
-  h1
-    padding-top: 10px
-    padding-bottom: 10px
-  h1.title
-    float: left
-  a.button
-    float: right
-  .date
-    clear: both
-  h2
-    padding-top: 10px
-    padding-bottom: 10px
-    font-size: 20px
-  p
-    margin-top: 20px
-    margin-bottom: 20px
-
 .clear
   clear: both
 
@@ -155,5 +50,6 @@ li.job
 @import "components/ribbon"
 @import "modules/meetup"
 @import "modules/supporters"
+@import "modules/jobs"
 @import "modules/code_of_conduct"
 @import "modules/slack"
