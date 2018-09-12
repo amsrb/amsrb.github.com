@@ -12,6 +12,13 @@ $font-size: 1.3em
 @import "reset"
 @import "typography"
 
+html
+  box-sizing: border-box
+*,
+*:before,
+*:after
+  box-sizing: inherit
+
 @mixin hide
   left: -9999px
   position: absolute
@@ -79,122 +86,9 @@ section
     transition: all 0.2s ease-out
 
 .wrap
-  max-width: 940px
+  max-width: 960px
   margin: 0 auto
   padding: 0 10px
-
-#map
-  width: 100%
-  height: 505px
-  position: relative
-  border-radius: 20px
-  border: solid 1px $border-color
-  overflow: hidden
-
-.mapbox
-  width: 100%
-  overflow: hidden
-  border-radius: 20px
-
-  img
-    display: block
-    margin-left: -50px
-
-  a,
-    display: block
-
-#company
-  width: 50%
-  height: 465px
-  top: 0
-  right: 0
-  position: absolute
-  padding: 20px 2.2% 20px 2.2%
-  border-left: solid 1px $border-color
-  background: #fff
-  border-radius: 0 20px 20px 0
-
-  h2
-    font-family: $abel
-    font-size: 4em
-    line-height: 1
-    margin-bottom: 15px
-
-  .button
-    bottom: 20px
-    right: 5.5556%
-    position: absolute
-
-.date-loc
-  width: 100%
-  margin: 0 0 15px -5.5556%
-  padding: 10px 5.5556%
-  font-family: $abel
-  border-top: dashed 1px $border-color
-  border-bottom: dashed 1px $border-color
-
-  .date
-    font-size: 2.5em
-
-  .loc
-    margin-top: 5px
-    font-size: 1.5em
-
-.content
-  height: 240px
-
-  p
-    margin-bottom: 10px
-
-    &:last-child
-      margin: 0
-
-  em
-    font-style: italic
-
-  strong
-    font-weight: bold
-
-  .speaker
-    min-height: 60px
-    padding-bottom: 10px
-    &:after
-      content: ""
-      clear: both
-      display: block
-    img
-      position: absolute
-    span
-      display: block
-      margin-left: 65px
-      font-size: 12px
-      line-height: 16px
-      &.name
-        font-weight: bold
-      &.talk
-        font-style: italic
-
-@media (max-width: 660px)
-  #map
-    height: auto
-
-  .mapbox
-    border-top: solid 1px $border-color
-    border-radius: 0 0 20px 20px
-
-    img
-      max-width: 100%
-      margin: 0
-
-  #company
-    width: auto
-    height: auto
-    position: static
-    border: 0
-    border-radius: 0
-
-  .content
-    height: auto
 
 .post
   padding: 20px 0
@@ -398,6 +292,7 @@ section#projects
 @import "components/header"
 @import "components/footer"
 @import "components/ribbon"
-@import "modules/slack"
+@import "modules/meetup"
 @import "modules/supporters"
 @import "modules/code_of_conduct"
+@import "modules/slack"

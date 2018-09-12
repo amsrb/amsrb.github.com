@@ -1,0 +1,94 @@
+.meetup
+  .meetup-box
+    position: relative
+    display: flex
+    flex: 1
+    border: solid 1px $border-color
+    border-radius: 20px
+
+  .map
+    flex-basis: 45%
+    order: 1
+    width: 100%
+    overflow: hidden
+    border-radius: 20px
+
+    a,
+    img
+      display: block
+
+  .details
+    order: 2
+    flex-basis: 55%
+    background: #fff
+    border-radius: 0 20px 20px 0
+    border-left: solid 1px $border-color
+
+    h2
+      font-family: $abel
+      font-size: 4em
+      line-height: 1
+
+  h2,
+  .date-loc,
+  .content
+    padding: 20px
+
+  .date-loc
+    padding:
+      top: 10px
+      bottom: 10px
+    width: 100%
+    font-family: $abel
+    border-top: dashed 1px $border-color
+    border-bottom: dashed 1px $border-color
+
+    .date
+      font-size: 2.5em
+
+    .loc
+      margin-top: 5px
+      font-size: 1.5em
+
+  .content
+    p
+      margin-bottom: 10px
+
+      &:last-child
+        margin: 0
+
+    em
+      font-style: italic
+
+    strong
+      font-weight: bold
+
+  .button
+    position: absolute
+    right: 20px
+    bottom: 20px
+
+  @media (max-width: 750px)
+    .meetup-box
+      flex-direction: column
+      border: 0
+
+    .details
+      order: 1
+
+    .map
+      order: 2
+      img
+        margin: 0
+        max-width: 100%
+
+    .details
+      border: 0
+      border-radius: 0
+
+  @media (max-width: 500px)
+    .button-wrapper
+      text-align: center
+
+    .button
+      position: static
