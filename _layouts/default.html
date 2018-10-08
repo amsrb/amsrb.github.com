@@ -4,7 +4,13 @@
   <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Amsterdam.rb</title>
+    <title>
+      {% if page.title == nil %}
+        {{ site.site_title }}
+      {% else %}
+        {{ page.title }} - {{ site.site_title }}
+      {% endif %}
+    </title>
     <link href="/assets/stylesheets/site.css" media="screen" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">

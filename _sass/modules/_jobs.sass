@@ -1,0 +1,87 @@
+// Job list
+.jobs
+  clear: left
+
+  &:after
+    content: ""
+    clear: both
+    display: block
+
+  .job-title
+    float: left
+    padding: 0 25px
+    font-family: $abel
+    font-size: 2.5em
+    line-height: 55px
+
+  .job-heading
+    color: $font-color
+    overflow: hidden
+
+  .company-slogan
+    display: block
+    color: $link-color
+
+  .button
+    float: right
+
+  img
+    padding: 25px
+    padding-right: 0
+    float: left
+    max-width: 200px
+
+  ul
+    margin: 0 0 20px 0
+    overflow: hidden
+
+  li
+    display: block
+    margin-bottom: 20px
+    width: 100%
+    min-height: 110px
+    background: #e7e7e7
+    border: solid 1px #e7e7e7
+
+    &:hover
+      border-color: $border-color
+      box-shadow: $border-color 0 0 10px inset
+
+// Job detail page
+.job-page
+  padding:
+    left: 80px
+    right: 80px
+
+  @media (max-width: 650px)
+    padding:
+      left: 20px
+      right: 20px
+
+  h1
+    float: left
+    margin:
+      top: 10px
+      bottom: 10px
+
+  h2
+    margin:
+      top: 10px
+      bottom: 10px
+    font-size: 20px
+
+  .logo
+    max-width: 200px
+    padding: 20px 0
+
+  .button
+    float: right
+
+  .date
+    font-size: $font-size
+    clear: both
+
+  p
+    margin:
+      top: 20px
+      bottom: 20px

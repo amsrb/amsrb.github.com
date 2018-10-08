@@ -11,3 +11,4 @@ exclude:
   - CNAME
   - Gemfile
   - Gemfile.lock
+site_title: "Amsterdam.rb"
