@@ -12,7 +12,7 @@ layout: default
       <h2>🎤 Talks & Drinks</h2>
 
       <div class="date-loc">
-        <p class="date">Tuesday, October 16, 2018 - 18:30h</p>
+        <p class="date">Tuesday, November 20, 2018 - 18:30h</p>
         <p class="loc">
           <a href="https://www.google.com/maps/search/?api=1&query=52.370440%2C4.924585" title="location">The Main Ingredient</a>
           Oostenburgervoorstraat 83a Amsterdam
@@ -22,37 +22,34 @@ layout: default
       <div class="content">
         <p>Dear Ruby friends,</p>
 
-        <p>For this Meetup, we invited an International guest, Rails core team member: Eileen M. Uchitelle 🎉</p>
+        <p>For this Meetup, we have a theme: Rack, sockets, connections, and how to request lots from your webserver. That may sound a bit geeky, so feel free to bring your own pocket protector.</p>
 
         <p>
-          The Main Ingredient is hosting this event at their offices (Oostenburgervoorstraat 83A,
-          Amsterdam) and will take care of the drinks. GitHub will make sure we're well fed.
+          The Main Ingredient is hosting this event AND takes care of the drinks AND food!!!
+          Please join us at their office at Oostenburgervoorstraat 83A Amsterdam.
         </p>
 
-       <p><strong>Program</strong></p>
+        <p><strong>Program</strong></p>
 
-       <p>18:00 Doors open 🍕</p>
-
-        <p>19:00-19:30 Eileen M. Uchitelle (<a href="https://twitter.com/eileencodes" target="_blank" rel="noopener noreferrer">@eileencodes</a>) - Eileen is a Senior Systems Engineer at GitHub, and Rails core team member.<p>
-        <p><strong>The Future of Rails 6: Scalable by Default</strong><br>
-          We've all heard the phrase "Rails doesn't scale". Long running test suites and no standard
-          for implementing multiple databases makes it hard to scale monolithic Rails applications.
-          <br>
-          Rails 6 will start making Rails scalable by default with parallel testing and improved
-          support for using multiple databases. You'll no longer be forced to reinvent the wheel and
-          create your own solution to these problems. In this talk we'll take a look why these
-          improvements are important, how they work, and ways in which small ideas can quickly
-          snowball into major changes.<br>
-          This is just the beginning of Rails 6.
-        </p>
-
+        <p>18:00 Doors open 🍻 + 🍕</p>
+        <p>19:00 Wander Hillen</p>
         <p>19:30 Break</p>
-
-        <p>20:00-20:30 Fotos Georgiadis - Building an API client for Microservices - Senior Software Engineer at Catawiki, Fotos will tell us more about an internal gem they built.</p>
-
+        <p>20:00 Dávid Halász</p>
         <p>20:30-21:30 Networking and drinks</p>
 
-        <p>⚠️ Please note that for this meetup we have limited spots available ⚠️</p>
+        <p><strong>*Talks*</strong></p>
+
+        <p><strong>Wander Hillen</strong> - Serving more than 10k connections from a single ruby process.</p>
+
+        <p>The Rack interface that most Ruby webservers expose to apppcations was designed for the short HTTP request/response cycle.</p>
+
+        <p>With websockets and Server Sent Events, these connections stay open for much longer. In this talk we look at the design of Rack, explore the 'socket hijack' technique and see how many connections we can squeeze out of a single Puma process.</p>
+
+        <p><strong>Dávid Halász</strong> - How to smuggle TCP traffic through an HTTP connection.</p>
+
+        <p>Rack is a super simple, yet a very versatile tool to implement web servers in Ruby. It beats under the hood of Rails, but it can do much more. The socket hijacking has been implemented into Rack to support WebSockets by bypassing the middleware and so not blocking the worker threads. However, together with the HTTP Upgrade requests, this can be used to send regular TCP traffic through an open HTTP connection.</p>
+
+        <p>See you there &amp; bring a colleague! ❤️</p>
 
         <p>Arno, Floor, Tom &amp; Rayta</p>
       </div>
