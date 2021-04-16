@@ -1,24 +1,36 @@
 .supporters
-  margin-bottom: 20px
   clear: left
 
   ul
-    overflow: hidden
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    margin-bottom: 20px
 
   li
-    float: left
-    margin: 0 0 1.965% 1.965%
-    width: 22.595%
-    min-height: 110px
-    background-color: #f2f2f2
-    border: 1px solid #eaeaea
-
-    @media (max-width: 880px)
-      width: 47.5%
+    display: flex
+    align-items: stretch
+    align-content: stretch
+    margin: 0 20px 20px 0
+    width: 270px
+    min-height: 170px
+    background-color: #FFFFFF
+    box-shadow: 0 12px 32px -8px rgba(26,26,26,0.24)
+    border-radius: 4px
 
     &:hover
       border-color: $border-color
       box-shadow: $border-color 0 0 10px inset
+
+    a
+      display: flex
+      align-items: center
+      width: 100%
+
+    @media (max-width: 580px)
+      margin-right: 0
 
   .image-box
     width: 100%

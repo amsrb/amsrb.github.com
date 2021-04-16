@@ -1,18 +1,103 @@
+body
+  font-family: $font-family
+  font-size: 100%
+  line-height: 1.2
+  color: $font-color
+
+em
+  font-style: italic
+
+strong
+  font-weight: bold
+
 a
   color: $link-color
-  text-decoration: none
-
-p,
-ul
-  font-size: $font-size
-
-ul.list-disc
-  list-style: disc inside
-  margin: 20px 0 20px 0
+  text-decoration: underline
+  &:hover
+    text-decoration: none
 
 h1,
 h2,
 h3,
 h4
-  font-family: $abel
-  font-size: 2.5em
+  font-family: $changa
+
+h2,
+h3,
+h4
+  margin-bottom: .5em
+
+h2
+  font-size: 2em
+  @media (max-width: 790px)
+    margin-bottom: 20px
+
+.big
+  font-size: 72px
+  line-height: 1.2
+
+  @media (max-width: 790px)
+    font-size: 46px
+    line-height: 1.1
+
+.huge
+  font-size: 140px
+  line-height: 1.2
+
+  @media (max-width: 790px)
+    font-size: 70px
+    line-height: 1.1
+
+h1
+  @extend .big
+  margin-bottom: 55px
+
+  @media (max-width: 790px)
+    margin-bottom: 20px
+
+p,
+ul,
+ol
+  font-size: 1.1em
+  line-height: 1.5
+
+  & + h2,
+  & + h3,
+  & + h4
+    margin-top: 40px
+
+p
+  margin-bottom: 15px
+
+ul,
+ol
+  margin-bottom: 10px
+  padding-left: 2em
+  li
+    padding-bottom: 0.2em
+    font-size: $font-size // TODO: make site default
+
+p,
+ul,
+ol
+  &:last-child
+    margin-bottom: 0
+
+ul
+  list-style-type: disc
+ol
+  list-style-type: decimal
+
+.no-style
+  list-style-type: none
+  margin: 0
+  padding: 0
+  li
+    margin: 0
+    padding: 0
+
+.text-right
+  text-align: right
+
+.highlight
+  color: #FD2846

@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>
       {% if page.title == nil %}
-        {{ site.site_title }}
+      {{ site.site_title }}
       {% else %}
-        {{ page.title }} - {{ site.site_title }}
+      {{ page.title }} - {{ site.site_title }}
       {% endif %}
     </title>
     <link href="/assets/stylesheets/site.css" media="screen" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="shortcut icon" href="/assets/images/favicon.png">
     <script src="/assets/javascripts/modernizr-2.5.3.js"></script>
     <script type="text/javascript">
@@ -28,15 +30,16 @@
     </script>
   </head>
 
-  <body>
-   {% include header.html %}
-    <div class="wrap">
-      <div id="main">
-        {{ content }}
-        {% include supporters.html %}
-        {% include slack.html %}
-      </div>
+  <body class="js-body {{ page.page_class }}">
+    {% if page.page_class != "home" %}
+      {% include header.html %}
+    {% endif %}
+    <div id="main">
+      {{ content }}
+      {% include supporters.html %}
     </div>
     {% include footer.html %}
+
+    <script src="/assets/javascripts/app.js"></script>
   </body>
 </html>

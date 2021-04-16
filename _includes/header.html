@@ -1,23 +1,29 @@
-<header class="header">
+{% if page.page_class == "home" %}
+  {% assign header_class = "without-logo" %}
+{% else %}
+  {% assign header_class = "with-logo" %}
+{% endif %}
+<header class="header {{ header_class }}">
   <div class="wrap">
-    <h1><a href="/"><img src="/assets/images/logo.svg" alt="Amsterdam.rb logo" /></a></h1>
-    <p>We aim at promoting all the aspects of the Ruby programming language and at fostering a vivid Ruby community in the Amsterdam region.</p>
+    <div class="logo"><a href="/"><img src="/assets/images/logo.svg" alt="Amsterdam.rb logo"></a></div>
 
-    <nav class="navigation">
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/jobs/">Jobs</a>
-        </li>
-        <li>
-          <a href="/sponsorships/">Sponsorships</a>
-        </li>
-        <li>
-          <a href="/code-of-conduct/">Code of Conduct</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="navigation">
+      <input type="checkbox" class="js-menu-state" id="menu-open" value="open">
+      <label class="menu-toggle js-menu-toggle" for="menu-open" title="Toggle menu">
+        <div class="menu-icon">
+          <div class="menu-icon-inner"></div>
+        </div>
+      </label>
+      <nav>
+        <ul>
+          <li><a href="/" class="{% if page.url == "/" %}active{% endif %}">Home</a></li>
+          <li><a href="/code-of-conduct/" class="{% if page.url == "/code-of-conduct/" %}active{% endif %}">Code of Conduct</a></li>
+          <li><a href="/sponsorships/" class="{% if page.url == "/sponsorships/" %}active{% endif %}">Sponsorships</a></li>
+          <!-- <li><a href="/about/" class="{% if page.url == "/about/" %}active{% endif %}">About us</a></li> -->
+          <!-- <li><a href="/events/" class="{% if page.url == "/events/" %}active{% endif %}">Events</a></li> -->
+          <li><a href="/jobs/" class="{% if page.url == "/jobs/" %}active{% endif %}">Jobs</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>

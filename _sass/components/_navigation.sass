@@ -1,0 +1,111 @@
+.navigation
+  nav
+    display: inline-block
+    padding: 10px 0
+    font-size: 1em
+    z-index: 10
+
+  ul
+    margin: 0
+    padding: 0
+
+  li
+    display: inline-block
+    line-height: 32px
+
+  a
+    display: block
+    padding: 10px 12px
+    color: #FFFFFF
+    font-weight: 600
+    text-decoration: none
+
+    &.active,
+    &:hover
+      color: #FD2846
+
+  .menu-toggle
+    display: none
+    position: absolute
+    top: 14px
+    right: 5px
+    padding: 10px
+    cursor: pointer
+
+  .menu-icon
+    position: relative
+    padding: 5px
+
+  .menu-icon-inner
+    position: relative
+    top: 50%
+    margin-top: -2px
+    width: 20px
+    height: 2px
+    background-color: #FFF
+    border-radius: 3px
+    transition-property: transform
+    transition-timing-function: cubic-bezier(.55,.055,.675,.19)
+    transition-duration: .22s
+
+    &:before,
+    &:after
+      content: ""
+      display: block
+      position: absolute
+      width: 20px
+      height: 2px
+      background-color: #FFF
+      border-radius: 3px
+
+    &:before
+      top: -7px
+      transition: top .1s ease-in .25s,opacity .1s ease-in
+
+    &:after
+      bottom: -7px
+      transition: bottom .1s ease-in .25s, transform .22s cubic-bezier(.55,.055,.675,.19)
+
+  #menu-open
+    display: none
+
+  #menu-open:checked ~ nav
+    display: block
+
+  #menu-open:checked + .menu-toggle
+    .menu-icon-inner
+      transition-delay: .12s
+      transition-timing-function: cubic-bezier(.215,.61,.355,1)
+      transform: rotate(225deg)
+
+      &:before
+        top: 0
+        transition: top .1s ease-out, opacity .1s ease-out .12s
+        opacity: 0
+
+      &:after
+        bottom: 0
+        transition: bottom .1s ease-out, transform .22s cubic-bezier(.215,.61,.355,1) .12s
+        transform: rotate(-90deg)
+
+  @media (max-width: 600px)
+    nav
+      display: none
+      position: fixed
+      top: 57px
+      left: 0
+      right: 0
+      bottom: 0
+      padding-bottom: 20px
+      width: 100%
+
+      background-color: $dark-background
+
+    li
+      display: block
+
+    .menu-toggle
+      display: block
+
+      .menu-icon-closed
+        display: none

@@ -1,46 +1,88 @@
 ---
 layout: default
+page_class: "home"
 ---
 
 <section class="meetup" id="meetup">
-  <h1 class="ribbon">
-    <span class="ribbon-content">Stay tuned!</span>
-  </h1>
+  <div class="color-overlay">
+    {% include header.html %}
+    <div class="dark-content">
+      <div class="wrap">
+        <h1 class="highlight">
+          <div class="logo"><img src="/assets/images/logo.svg" alt="Amsterdam.rb logo"></div>Amsterdam RB
+        </h1>
+        <h2 class="huge">Meetup</h2>
+        <p class="date">Tuesday 20th of April, 2021</p>
 
-  <div class="meetup-box">
-    <div class="details">
+        <div class="text-content">
+          <p>Dear Ruby friends 🐱🐶🐰🐯,</p>
 
-      <!--
-      <div class="date-loc">
-        <p class="date"></p>
-        <p class="loc">
-          <a href="link" title="location"></a>
-        </p>
+          <p>It's been a while since the last Amsterdam.rb event 👋 We hope everyone is still doing well during this time. Our next meetup will be another virtual online event. Please RSVP so we have an idea of the audience size we can expect.</p>
+          <p>The livestream can be found on YouTube channel at the time of event. <a href="https://www.youtube.com/channel/UCyExf-593j4hjN_cFCSnr2w">Subscribe to the RubyNL channel</a>. We will send out a messages with the YouTube livestream link before the event.</p>
+
+          <p>All attendees can talk and ask questions with the community and speakers on the Ruby Netherlands Slack. <a href="https://amsrbslack.herokuapp.com">Join our Slack today</a>. We will be chatting in the #amsterdam channel during this event, so don't forget to join the #amsterdam channel.</p>
+
+          <p>With this being a virtual meetup, food and beverages will be of the "bring your own" kind. Grab your most comfy chair and your favorite snacks and join us online!</p>
+
+          <p>
+            See you on the interwebs!<br>
+            Arno, Floor, Tom &amp; Rayta
+          </p>
+        </div>
+
+        <div class="button-group text-right">
+          <a class="button" href="https://www.meetup.com/Amsterdam-rb/events/277117196/">Join the Meetup</a>
+        </div>
+
+        <div class="text-content">
+          <p><em>PS. Are you interested in giving a talk at a future meetup? Contact us on <a href="https://twitter.com/amsrb">Twitter @amsrb</a>, <a href="mailto:amsrborgs@rubynl.org">via Email</a>, or on Slack (@Arno - he/him, @FloorD, @tombruijn or @rayta).</em></p>
+        </div>
       </div>
-      -->
+    </div>
+  </div>
+</section>
 
-      <div class="content">
-        <p>Dear Ruby friends 🦊🐙🐹🐟,</p>
+<section class="program dark-content" id="program">
+  <div class="wrap">
+    <h2 class="big">Event <span class="highlight">Program</span></h2>
 
-        <p>It's been a while since the last Amsterdam.rb event 👋</p>
-        <p><a href="https://www.meetup.com/Amsterdam-rb/events/283711435/" target="_blank" rel="noopener noreferrer">Please RSVP</a> so we have an idea of the audience we can expect, this February 22.</p>
-        <p>The talks will be live streamed through YouTube (link to follow). No proprietary software is needed and no need to join.</p>
-        <p>All attendees can talk and ask questions with the community and speakers on the Ruby Netherlands Slack. <a href="https://amsrbslack.herokuapp.com">Join our Slack today!</a></p>
-        <p>With this being a virtual meetup, food and beverages will be of the "bring your own" kind. Grab a comfy chair and your favorite snacks and join us online!</p>
-
-        <h3>Program</h3>
-        <ul class="list-disc">
-          <li>19:00 - Word of welcome from the organizers</li>
-          <li>Benjamin Udink ten Cate on talking about technical debt</li>
-          <li>Benoit Tigiot on fixing a gnarly issue in RSpec</li>
-        </ul>
-
-        <p>See you on the interwebs!</p>
-        <p>Arno, Floor, Tom &amp; Rayta</p>
+    <div class="entry">
+      <div class="time">19:00 - 19:15</div>
+      <div class="details">
+        <div class="entry-name highlight">Welcome</div>
       </div>
-      <div class="button-wrapper">
-        <a class="button" href="https://www.meetup.com/Amsterdam-rb/events/283711435/">Sign up on Meetup</a>
+    </div>
+    <div class="entry">
+      <div class="time">19:15 - 19:45</div>
+      <div class="details">
+        <div class="entry-name speaker">Shaun Carland</div>
+        <div class="title">A Plain Ole’ Ruby Object Approach to Serialization</div>
+        <p>Some text</p>
       </div>
+    </div>
+    <div class="entry">
+      <div class="time">19:45 - 20:00</div>
+      <div class="details">
+        <div class="entry-name">Short break</div>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="time">20:00 - 20:30</div>
+      <div class="details">
+        <div class="entry-name speaker">Julik Tarkhanov</div>
+        <div class="title">Concurrency, Fibers and you</div>
+        <p>Some text</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="time">20:30 - 20:40</div>
+      <div class="details">
+        <div class="entry-name highlight">Closing statements</div>
+      </div>
+    </div>
+
+    <div class="button-group text-right">
+      <a class="button" href="https://www.meetup.com/Amsterdam-rb/events/277117196/">Join the Meetup</a>
     </div>
   </div>
 </section>

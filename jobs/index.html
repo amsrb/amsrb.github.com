@@ -3,28 +3,34 @@ layout: default
 title: Jobs
 ---
 
-<section class="jobs">
-  <h1 class="ribbon">
-    <span class="ribbon-content">Jobs</span>
-  </h1>
+<section class="jobs dark-content">
+  <div class="wrap">
+    <h1>Jobs</h1>
 
-  <ul>
-    {% for post in site.posts %}
-      {% if post.category == "job"%}
-        <li>
-          <a href="{{ post.url }}">
-            <img src="/assets/images/logo/{{post.logo}}">
-            <div class="job-title">
-              <div class="job-heading">{{ post.title }}</div>
-              <div class="company-slogan"><b>{{ post.company }}</b> - {{ post.slogan }}</div>
-            </div>
-          </a>
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+    {% if site.posts.size == 0 %}
+      <p>No jobs posted currently.</p>
+    {% else %}
+      <ul>
+        {% for post in site.posts %}
+          {% if post.category == "job"%}
+            <li>
+              <a href="{{ post.url }}">
+                <img src="/assets/images/logo/{{post.logo}}">
+                <div class="job-title">
+                  <div class="job-heading">{{ post.title }}</div>
+                  <div class="company-slogan"><b>{{ post.company }}</b> - {{ post.slogan }}</div>
+                </div>
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% endif %}
 
-  <a href="https://github.com/amsrb/amsrb.github.com#readme" class="button">
-    Add job posting
-  </a>
+    <div class="button-group text-right">
+      <a href="https://github.com/amsrb/amsrb.github.com#readme" class="button">
+        Add job posting
+      </a>
+    </div>
+  </div>
 </section>

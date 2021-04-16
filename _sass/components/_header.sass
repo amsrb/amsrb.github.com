@@ -1,65 +1,62 @@
 .header
-  position: relative
-  padding-top: 80px
-  margin-bottom: 25px
+  border-bottom: 1px solid #574256
 
-  img
-    display: block
-    margin: 0 auto 40px auto
-    width: 100%
-    max-width: 600px
+  .wrap
+    padding: 0
+    display: flex
+    align-items: flex-end
+    height: 100px
 
-  p
-    width: 70%
-    margin: 25px auto
-    font-family: $abel
-    font-size: 2.2em
-    text-align: center
-    line-height: 29px
-    color: #515151
-
-  // Max logo fit
-  @media (max-width: 760px)
-    padding-top: 30px
-    img
-      max-width: 90%
-    p
-      width: 90%
-
-  .navigation
-    margin: 20px 0
-    font-family: $abel
-    font-size: 20px
-    text-align: center
-    text-transform: uppercase
-
-    li
-      display: inline-block
-      font-size: 24px
-      line-height: 32px
-
-      &:after
-        content: "|"
-
-      &:last-child
-        &:after
-          content: ""
+  .logo
+    display: inline-block
+    margin: 0 0 0 -69px
+    height: 60px
 
     a
-      padding: 0 20px
+      display: block
+      padding: 10px
 
+    img
+      display: block
+      width: 100%
+      max-width: 40px
+      width: 40px
+      max-height: 30px
+      height: 30px
 
-    @media (max-width: 450px)
-      ul
-        text-align: left
-        list-style: disc
-        padding-left: 30px
+  &.without-logo
+    .logo
+      display: none
+    nav
+      margin-left: -12px
 
-      li
-        display: list-item
-        &:after
-          content: ""
+  @media (max-width: 940px)
+    .wrap
+      padding-left: 0
+    .logo a
+      padding-left: 0
+    .logo
+      margin-left: 0
 
-      a
-        padding: 0
-        text-decoration: underline
+  @media (max-width: 790px)
+    .wrap
+      padding-left: 20px
+
+  @media (max-width: 600px)
+    height: 58px
+    background-color: $dark-background
+
+    .wrap
+      display: flex
+      align-items: center
+      height: 100%
+
+    .logo
+      height: auto
+
+.home .header
+  background-color: transparent
+  border-bottom-color: transparent
+
+  @media (max-width: 600px)
+    background-color: transparent

@@ -1,17 +1,35 @@
 .button
   display: inline-block
-  padding: 8px 10px 7px 10px
-  color: #fff
-  font-size: 1.5em
+  padding: 15px 30px
+  color: #FFFFFF
+  font-size: 1em
   font-weight: bold
-  text-transform: uppercase
   text-shadow: #4f0608 1px 1px 1px
+  text-decoration: none
 
-  background-color: #f20022
-  background: linear-gradient(#f20022, #c8001d)
-  border: 1px solid #a00c07
+  background-color: #FD2846
   border-radius: 4px
 
+  & + .button
+    margin-left: 24px
+
   &:hover
-    box-shadow: 0 2px 5px #4f0608 inset
+    background-color: #AD3540
+    box-shadow: 0 2px 5px #4f0608
     transition: all 0.2s ease-out
+    text-decoration: none
+
+.button-group
+  margin: 40px 0
+
+@media (max-width: 700px)
+  .button-group
+    text-align: center
+
+  .button + .button
+    margin-left: 0
+
+  .button
+    display: block
+    margin-bottom: 20px
+    text-align: center
