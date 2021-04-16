@@ -12,4 +12,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - tags
+  - script
 site_title: "Amsterdam.rb"

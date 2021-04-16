@@ -4,15 +4,16 @@
 
 ## Installation
 
-1. Fork this repo.
-2. Install the bundle: `bundle install`
+1. Fork this repo and clone it locally.
+2. Install the app: `script/setup`
 
 ## Usage
 
 Run Jekyll with "watch" on, so it will track file updates you make on reload.
+Use the helper script to run the app easily.
 
 ```
-bundle exec jekyll serve --watch
+bin/server
 ```
 
 ## Add a job offering
