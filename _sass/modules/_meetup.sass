@@ -45,12 +45,17 @@
   iframe
     max-width: 100%
 
+$small-program-width: 740px
+
 .program
   .entry
     display: grid
     grid-template-columns: 1fr 3fr
     grid-gap: 10px 20px
     margin-bottom: 24px
+
+    @media (max-width: $small-program-width)
+      display: block
 
   .time,
   .entry-name
@@ -60,24 +65,34 @@
     font-weight: 900
     font-feature-settings: "tnum"
     font-variant-numeric: tabular-nums
+    @media (max-width: $small-program-width)
+      display: inline
+      &:after
+        content: " - "
+        margin-left: 5px
+        margin-right: 5px
   .entry-name
     color: $highlight-color
     font-weight: bold
+    @media (max-width: $small-program-width)
+      display: inline
   .title
     font-size: 32px
     font-weight: bold
+    @media (max-width: $small-program-width)
+      font-size: initial
+      font-weight: normal
+
   .entry-name + .title
     margin-top: 24px
-
-  .entry-icon
-    width: 46px
-    img
-      width: 46px
-      height: 34px
 
   .details
     position: relative
     padding-left: 79px
+
+    @media (max-width: $small-program-width)
+      display: inline
+      padding-left: 0
 
     &:after
       content: ""
@@ -87,6 +102,9 @@
       left: 0
 
       border-left: 1px solid #817180
+
+      @media (max-width: $small-program-width)
+        display: none
 
   .entry-with-icon
     .details
@@ -103,8 +121,13 @@
         background-repeat: no-repeat
         background-size: contain
 
+        @media (max-width: $small-program-width)
+          display: none
+
       &:after
         top: 56px
 
   p
     margin-top: 24px
+    @media (max-width: $small-program-width)
+      margin-top: 10px
