@@ -6,6 +6,8 @@
     display: flex
     align-items: flex-end
     height: 100px
+    @media (max-width: 775px)
+      height: auto
 
   .logo
     display: inline-block
@@ -25,10 +27,13 @@
       height: 30px
 
   &.without-logo
-    .logo
-      display: none
+    @media (min-width: $mobile-navigation-width)
+      .logo
+        display: none
     nav
       margin-left: -12px
+      @media (max-width: $mobile-navigation-width)
+        margin-left: 0
 
   @media (max-width: 940px)
     .wrap
@@ -42,7 +47,7 @@
     .wrap
       padding-left: 20px
 
-  @media (max-width: 600px)
+  @media (max-width: $mobile-navigation-width)
     height: 58px
     background-color: $dark-background
 
@@ -58,5 +63,5 @@
   background-color: transparent
   border-bottom-color: transparent
 
-  @media (max-width: 600px)
+  @media (max-width: $mobile-navigation-width)
     background-color: transparent

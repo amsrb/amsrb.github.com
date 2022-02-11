@@ -88,24 +88,30 @@
         transition: bottom .1s ease-out, transform .22s cubic-bezier(.215,.61,.355,1) .12s
         transform: rotate(-90deg)
 
-  @media (max-width: 600px)
+  @media (max-width: $mobile-navigation-width)
     nav
       display: none
       position: fixed
-      top: 57px
+      top: 0
       left: 0
       right: 0
       bottom: 0
-      padding-bottom: 20px
       width: 100%
 
       background-color: $dark-background
 
     li
       display: block
+      margin: 4px 0
+      line-height: normal
+
+    a
+      padding: 3px 20px
+      font-size: 1.4em
 
     .menu-toggle
       display: block
+      z-index: 100
 
       .menu-icon-closed
         display: none

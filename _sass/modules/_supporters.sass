@@ -15,19 +15,19 @@
     align-content: stretch
     margin: 0 20px 20px 0
     width: 270px
-    min-height: 170px
-    background-color: #FFFFFF
-    box-shadow: 0 12px 32px -8px rgba(26,26,26,0.24)
-    border-radius: 4px
-
-    &:hover
-      border-color: $border-color
-      box-shadow: $border-color 0 0 10px inset
 
     a
       display: flex
       align-items: center
       width: 100%
+      min-height: 170px
+      background-color: #FFFFFF
+      box-shadow: 0 12px 32px -8px rgba(26,26,26,0.24)
+      border-radius: 4px
+      transition: all 200ms ease
+
+      &:hover
+        border-color: $border-color
 
     @media (max-width: 580px)
       margin-right: 0
