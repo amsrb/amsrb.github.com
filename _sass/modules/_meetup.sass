@@ -43,6 +43,9 @@
 
 .program
   .entry
+    display: grid
+    grid-template-columns: 1fr 3fr
+    grid-gap: 10px 20px
     margin-bottom: 24px
 
   .time,
@@ -62,13 +65,42 @@
   .entry-name + .title
     margin-top: 24px
 
+  .entry-icon
+    width: 46px
+    img
+      width: 46px
+      height: 34px
+
   .details
-    // TODO: position this better with a grid or flexbox
     position: relative
-    top: -20px
-    margin-left: 220px
     padding-left: 79px
-    border-left: 1px solid #817180
+
+    &:after
+      content: ""
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+
+      border-left: 1px solid #817180
+
+  .entry-with-icon
+    .details
+      &:before
+        content: ""
+        position: absolute
+        top: 0
+        left: -23px
+
+        width: 46px
+        height: 34px
+
+        background-image: url(/assets/images/logo.svg)
+        background-repeat: no-repeat
+        background-size: contain
+
+      &:after
+        top: 56px
 
   p
     margin-top: 24px
