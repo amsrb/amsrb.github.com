@@ -6,6 +6,7 @@
   font-weight: bold
   text-shadow: #4f0608 1px 1px 1px
   text-decoration: none
+  line-height: 1.1em
 
   background-color: #FD2846
   border-radius: 4px
@@ -15,7 +16,6 @@
 
   &:hover
     background-color: #AD3540
-    box-shadow: 0 2px 5px #4f0608
     transition: all 0.2s ease-out
     text-decoration: none
 
@@ -24,12 +24,18 @@
 
 @media (max-width: 700px)
   .button-group
+    margin: 20px 0
     text-align: center
 
+    &:last-child
+      margin-bottom: 0
+
   .button + .button
-    margin-left: 0
+    margin: 20px 0
 
   .button
     display: block
-    margin-bottom: 20px
     text-align: center
+
+    &:last-child
+      margin-bottom: 0

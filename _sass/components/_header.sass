@@ -15,21 +15,36 @@
     height: 60px
 
     a
-      display: block
+      display: flex
+      align-items: center
       padding: 10px
+      text-decoration: none
 
     img
-      display: block
+      display: inline-block
       width: 100%
       max-width: 40px
       width: 40px
       max-height: 30px
       height: 30px
 
-  &.without-logo
-    @media (min-width: $mobile-navigation-width)
-      .logo
+    .logo-text
+      display: inline-block
+      margin-left: 15px
+      color: #FFF
+      font-size: 1.5em
+      font-family: $changa
+
+      @media (min-width: $mobile-navigation-width)
         display: none
+
+  &.without-logo-text
+    .logo-text
+      display: none
+
+  &.without-logo
+    .logo
+      display: none
     nav
       margin-left: -12px
       @media (max-width: $mobile-navigation-width)

@@ -43,8 +43,68 @@
     @media (max-width: 790px)
       font-size: 22px
 
+.hero
+  position: relative
+  background:
+    image: url(/assets/images/background.jpg)
+    repeat: no-repeat
+    position: center
+    size: cover
+
+  .color-overlay
+    background: rgba(45, 19, 44, 0.8)
+
+  .dark-content
+    padding-bottom: 110px
+    @media (max-width: 790px)
+      padding-bottom: 50px
+    @media (max-width: $mobile-navigation-width)
+      padding-top: 0
+
+  h1
+    margin: 0
+    margin-bottom: 20px
+    text-align: center
+
+    .logo
+      position: relative
+      top: 10px
+      display: inline-block
+      /* margin-left: -103px // width + padding */
+      margin-right: 24px
+
+      img
+        display: block
+        width: 79px
+        height: 60px
+
+        @media (max-width: $mobile-navigation-width)
+          width: 55px
+          height: 45px
+
+  p
+    font-size: 2em
+    font-weight: bold
+    text-align: center
+
+.meetup2
+  h2
+    margin: 0
+
+  img
+    max-width: 100%
+
+  .date
+    margin-bottom: 20px
+    font-size: 40px
+
+    @media (max-width: 790px)
+      font-size: 22px
+
 .livestream
   iframe
+    display: block
+    margin: 40px 0 40px 0
     max-width: 100%
 
 $small-program-width: 740px
