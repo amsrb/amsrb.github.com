@@ -108,6 +108,7 @@
     max-width: 100%
 
 $small-program-width: 740px
+$tiny-program-width: 560px
 
 .program
   .entry
@@ -133,11 +134,19 @@ $small-program-width: 740px
         content: " - "
         margin-left: 5px
         margin-right: 5px
+    @media (max-width: $tiny-program-width)
+      color: $highlight-color
+      &:after
+        content: ""
   .entry-name
     color: $highlight-color
     font-weight: bold
     @media (max-width: $small-program-width)
       display: inline
+    @media (max-width: $tiny-program-width)
+      display: block
+      color: inherit
+      font-size: inherit
   .title
     font-size: 32px
     font-weight: bold
@@ -147,6 +156,8 @@ $small-program-width: 740px
 
   .entry-name + .title
     margin-top: 24px
+    @media (max-width: $small-program-width)
+      margin-top: 5px
 
   .details
     position: relative
