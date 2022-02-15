@@ -17,6 +17,7 @@
     width: 270px
 
     a
+      position: relative
       display: flex
       align-items: center
       width: 100%
@@ -27,7 +28,8 @@
       transition: all 200ms ease
 
       &:hover
-        border-color: $border-color
+        top: -2px
+        box-shadow: 0 12px 32px -8px rgba(26,26,26,0.5)
 
     @media (max-width: 580px)
       margin-right: 0
