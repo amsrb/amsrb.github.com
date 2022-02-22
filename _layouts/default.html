@@ -20,16 +20,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="/assets/images/favicon.png">
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-3300381-18']);
-      _gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3300381-18"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "UA-3300381-18", { "anonymize_ip": true });
     </script>
   </head>
 
