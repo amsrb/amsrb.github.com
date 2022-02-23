@@ -5,7 +5,11 @@ function addEventHandlers() {
 
   navToggle.addEventListener("click", event => {
     window.scrollTo(0, 0);
+    navToggle.setAttribute("aria-expanded", !navState.checked);
     html.classList.toggle("no-scroll", !navState.checked);
+    if (navState) {
+      navToggle.focus();
+    }
   });
 }
 
