@@ -11,8 +11,8 @@
 
     <div class="navigation">
       <input type="checkbox" class="js-menu-state" id="menu-open" value="open">
-      <button
-        type="button"
+      <label
+        tabindex="1"
         class="menu-toggle js-menu-toggle"
         for="menu-open"
         title="Toggle navigation menu"
@@ -22,7 +22,7 @@
         <div class="menu-icon">
           <div class="menu-icon-inner"></div>
         </div>
-      </button>
+      </label>
       <nav>
         <ul>
           <li><a href="/" class="{% if page.url == "/" %}active{% endif %}">Home</a></li>
