@@ -7,19 +7,35 @@
     <meta name="theme-color" content="#2D132C"/>
     <meta name="description" content="{{ page.description }}"/>
 
-    <title>
+    {% capture title %}
       {% if page.title == nil %}
-      {{ site.site_title }}
+        {{ site.site_title }}
       {% else %}
-      {{ page.title }} - {{ site.site_title }}
+        {{ page.title }} - {{ site.site_title }}
       {% endif %}
-    </title>
+    {% endcapture %}
+    <title>{{ title | strip }}</title>
     <link href="/assets/stylesheets/site.css" media="screen" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
     <link rel="shortcut icon" href="/assets/images/favicon.png">
+
+    <meta property="og:site_name" content="{{ site.site_title }}">
+    <meta property="og:title" content="{{ title  | strip }}">
+    <meta name="og:description" content="{{ page.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amsrb.org{{ page.url }}">
+    <meta property="og:image" content="https://www.amsrb.org/assets/images/social-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="628">
+
+    <meta name="twitter:site" content="@amsrb">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ title | strip }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta name="twitter:image" content="https://www.amsrb.org/assets/images/social-image.png">
+    <meta name="twitter:url" content="https://amsrb.org{{ page.url }}">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3300381-18"></script>
     <script>
