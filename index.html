@@ -2,7 +2,8 @@
 layout: default
 page_class: "home"
 description: "Welcome to the Amsterdam Ruby meetup group! RSVP for our next event or catch up on the last event."
-meetup_link: "https://www.meetup.com/Amsterdam-rb/events/283711435/"
+livestream_link: "https://www.youtube-nocookie.com/embed/jwhh_C80dBA"
+meetup_link: ""
 ---
 
 <section class="hero" id="hero">
@@ -21,13 +22,14 @@ meetup_link: "https://www.meetup.com/Amsterdam-rb/events/283711435/"
 
 <main>
   {% comment %}
-  Change to true if livestream should be visible{% endcomment %}
-  {% if true %}
+  To make the YouTube livestream visible, update the `livestream_link` variable at the top page. If the variable value is an empty string, the video will be hidden.
+  {% endcomment %}
+  {% if page.livestream_link != "" %}
   <section class="livestream light-content" id="livestream">
     <div class="wrap">
       <h2 class="big">Last meetup recording</h2>
 
-      <iframe width="746" height="420" src="https://www.youtube-nocookie.com/embed/jwhh_C80dBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="746" height="420" src="{{ page.livestream_link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <p>Future and past meetups can be found on the <a href="https://www.youtube.com/channel/UCyExf-593j4hjN_cFCSnr2w">Ruby NL YouTube channel</a>.</p>
     </div>
   </section>
@@ -42,9 +44,14 @@ meetup_link: "https://www.meetup.com/Amsterdam-rb/events/283711435/"
         <p>See you at our next meetup! Probably 15th of March, 2022. Watch this page or follow us on Twitter <a href="https://twitter.com/amsrb">@amsrb</a></p>
       </div>
 
+      {% comment %}
+      To update the meetup link, change the `meetup_link` variable at the top of the page. If the variable value is an empty string, the link will be hidden.
+      {% endcomment %}
+      {% if page.meetup_link != "" %}
       <div class="button-group text-right">
         <a class="button" href="{{ page.meetup_link }}">Join the Meetup</a>
       </div>
+      {% endif %}
 
       <div class="text-content">
         <p><em>PS. Are you interested in giving a talk at a future meetup? Please <a href="/contact">contact us</a> via email, Twitter or Slack.</em></p>
@@ -89,9 +96,14 @@ meetup_link: "https://www.meetup.com/Amsterdam-rb/events/283711435/"
         </div>
       </div>
 
+      {% comment %}
+      To update the meetup link, change the `meetup_link` variable at the top of the page. If the variable value is an empty string, the link will be hidden.
+      {% endcomment %}
+      {% if page.meetup_link != "" %}
       <div class="button-group text-right">
         <a class="button" href="{{ page.meetup_link }}">Join the Meetup</a>
       </div>
+      {% endif %}
     </div>
   </section>
 </main>
