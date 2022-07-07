@@ -22,5 +22,5 @@ bin/server
 2. Copy any previous posting in `/_posts/`.
 3. Modify the file to reflect the job listing.
 4. Add your company logo to `/assets/images/logo` for the posting.
-5. Send a Pull Request to merge it to master repository.
+5. Send a Pull Request to merge it to main repository.
 6. Wait for it to be deployed.
