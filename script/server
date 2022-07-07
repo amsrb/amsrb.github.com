@@ -2,4 +2,4 @@
 
 set -eu
 
-bundle exec jekyll serve --watc
+bundle exec jekyll serve --watch
