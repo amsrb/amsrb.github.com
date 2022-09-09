@@ -14,3 +14,4 @@ exclude:
   - tags
   - script
 site_title: "Amsterdam.rb"
+slack_app: "https://slack.amsrb.org"
