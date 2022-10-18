@@ -15,3 +15,4 @@ exclude:
   - script
 site_title: "Amsterdam.rb"
 slack_app: "https://slack.amsrb.org"
+youtube_channel_url: "https://www.youtube.com/channel/UCyExf-593j4hjN_cFCSnr2w"
