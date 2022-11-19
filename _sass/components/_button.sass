@@ -6,6 +6,7 @@
   font-weight: bold
   text-shadow: #4f0608 1px 1px 1px
   text-decoration: none
+  text-align: center
   line-height: 1.1em
 
   background-color: #FD2846
@@ -22,6 +23,15 @@
 .button-group
   margin: 40px 0
 
+  &.flex
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+    .button
+      width: calc(50% - 10px)
+      margin: 0 0 20px 0
+
   &:last-child
     margin-bottom: 0
 
@@ -29,6 +39,12 @@
   .button-group
     margin: 20px 0
     text-align: center
+
+    &.flex
+      display: block
+
+      .button
+        width: 100%
 
   .button + .button
     margin: 20px 0
