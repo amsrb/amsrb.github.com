@@ -2,8 +2,8 @@
 layout: default
 page_class: "home"
 description: "Welcome to the Amsterdam Ruby meetup group! RSVP for our next event or catch up on the last event."
-livestream_link: "https://www.youtube-nocookie.com/embed/W5kaiwm5mZE"
-meetup_link: "https://www.meetup.com/amsterdam-rb/events/289852934/"
+livestream_link: "https://www.youtube-nocookie.com/embed/7azEFrQcVNE"
+meetup_link: "https://www.meetup.com/amsterdam-rb/events/289818356/"
 ---
 
 <section class="hero" id="hero">
@@ -30,7 +30,7 @@ meetup_link: "https://www.meetup.com/amsterdam-rb/events/289852934/"
       <h2 class="big">Last meetup recording</h2>
 
       <iframe width="746" height="420" src="{{ page.livestream_link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>Future and past meetups can be found on the <a href="{{ page.youtube_channel_url }}">Ruby NL YouTube channel</a>.</p>
+      <p>Future and past meetups can be found on the <a href="{{ site.youtube_channel_url }}">Ruby NL YouTube channel</a>.</p>
     </div>
   </section>
   {% endif %}
@@ -38,16 +38,24 @@ meetup_link: "https://www.meetup.com/amsterdam-rb/events/289852934/"
   <section class="meetup2 light-content content-with-shadow" id="meetup">
     <div class="wrap">
       <h2 class="big">Next meetup</h2>
-      <p class="date">21th of February, 2023</p>
-      <p>Location: <a href="https://goo.gl/maps/34PYMFZeMHfQA8oAA">Reaktor, Looiersgracht 32, Amsterdam</a></p>
+      <p class="date">21th of March, 2023</p>
+      <p>Location: To be determined
+        {% comment%}
+        <a href="https://goo.gl/maps/34PYMFZeMHfQA8oAA">Reaktor, Looiersgracht 32, Amsterdam</a>
+        {% endcomment %}
+      </p>
       <div class="text-content">
-        <p>Hello Rubyists ❄️ ⛄️,</p>
+        <p>Hello Rubyists 🌦️🍀,</p>
 
-        <p>Join us for the first meetup of 2023! The February meetup will start with two new talks! Join us to learn new things and chat people from the community. Check out the <a href="#program">event program</a>.</p>
+        <p>Join us for the first lightning talk meetup of th year! The March meetup will start with 4 fresh talks, followed by <em>another</em> 4 talks.
+          Join us to see what the community is thinking, building, and procrastinating on. There is plenty of time to talk shop with other Ruby professionals, or just have a casual chat with people from the community.
+          Check out the <a href="#program">event program</a>.</p>
 
+        {% comment %}
         <p>This month's meetup will take place at the Reaktor's office! 🏢 OfferZen will provide the delicious food and drinks to power you through the evening! 😋</p>
+        {% endcomment %}
 
-        <p>This location is completely (wheelchair) accessible. We will most likely livestream this event.</p>
+        <p>Our location (still to be found) is completely (wheelchair) accessible. We will most likely livestream this event.</p>
 
         <p>See you there! We can't wait 👋💚</p>
 
@@ -64,7 +72,7 @@ meetup_link: "https://www.meetup.com/amsterdam-rb/events/289852934/"
       {% endif %}
 
       <div class="text-content">
-        <p><em>PS. Are you interested in giving a talk at a future meetup? Check out our <a href="/speakers">"Give a talk!" page</a> and send us your idea!</em></p>
+        <p><em>PS. Are you interested in giving a talk at one of our events? Check out our <a href="/speakers">"Give a talk!" page</a> and send us your idea!</em></p>
       </div>
     </div>
   </section>
@@ -76,7 +84,7 @@ meetup_link: "https://www.meetup.com/amsterdam-rb/events/289852934/"
       <div class="entry">
         <div class="time">18:00 - 19:00</div>
         <div class="details">
-          <div class="entry-name highlight">Doors open: food and drinks</div>
+          <div class="entry-name highlight">Doors open: food and drinks and laughs</div>
         </div>
       </div>
       <div class="entry entry-with-icon">
@@ -85,26 +93,85 @@ meetup_link: "https://www.meetup.com/amsterdam-rb/events/289852934/"
           <div class="title">Opening statements</div>
         </div>
       </div>
-      <div class="entry entry-with-icon">
+
+      <div class="entry">
         <div class="time">19:15 - 20:00</div>
         <div class="details">
-          <div class="entry-name speaker">Aleks Yanchuk</div>
-          <div class="title">Why would I need Cucumber if I’m already using RSpec? Tales from the trenches</div>
+          <div class="title">First 4 talks</div>
         </div>
       </div>
-      <div class="entry">
-        <div class="time">20:00 - 20:15</div>
-        <div class="details">
-          <div class="entry-name">Short break</div>
-        </div>
-      </div>
+
       <div class="entry entry-with-icon">
+        <div class="time"></div>
+        <div class="details">
+          <div class="entry-name speaker">Wander Hillen</div>
+          <div class="title">Multiplying fishes as fast as possible (for Santa!)</div>
+        </div>
+      </div>
+
+      <div class="entry entry-with-icon">
+        <div class="time"></div>
+        <div class="details">
+          <div class="entry-name speaker">You?</div>
+          <div class="title"><a href="mailto:contact@rubynl.org?subject=I'd like to give a lightning talk">Tell us</a> about your talk!</div>
+        </div>
+      </div>
+
+      <div class="entry entry-with-icon">
+        <div class="time"></div>
+        <div class="details">
+          <div class="entry-name speaker">Derk-Jan Karrenbeld</div>
+          <div class="title">Exercis[em] is excellent</div>
+        </div>
+      </div>
+
+      <div class="entry entry-with-icon">
+        <div class="time"></div>
+        <div class="details">
+          <div class="entry-name speaker">You?</div>
+          <div class="title"><a href="mailto:contact@rubynl.org?subject=I'd like to give a lightning talk">Tell us</a> about your talk!</div>
+        </div>
+      </div>
+
+      <div class="entry">
         <div class="time">20:15 - 21:00</div>
         <div class="details">
-          <div class="entry-name speaker">Gys Muller</div>
-          <div class="title">Techniques for Terrible Technical Leadership (and how to avoid it)</div>
+          <div class="title">Next 4 talks</div>
         </div>
       </div>
+
+      <div class="entry entry-with-icon">
+        <div class="time"></div>
+        <div class="details">
+          <div class="entry-name speaker">Floor Drees</div>
+          <div class="title">What Rubyists need to know to start securing their open source software supply chains</div>
+        </div>
+      </div>
+
+      <div class="entry entry-with-icon">
+        <div class="time"></div>
+        <div class="details">
+          <div class="entry-name speaker">You?</div>
+          <div class="title"><a href="mailto:contact@rubynl.org?subject=I'd like to give a lightning talk">Tell us</a> about your talk!</div>
+        </div>
+      </div>
+
+      <div class="entry entry-with-icon">
+        <div class="time"></div>
+        <div class="details">
+          <div class="entry-name speaker">Arno Fleming</div>
+          <div class="title">More power in energy constrained times</div>
+        </div>
+      </div>
+
+      <div class="entry entry-with-icon">
+        <div class="time"></div>
+        <div class="details">
+          <div class="entry-name speaker">You?</div>
+          <div class="title"><a href="mailto:contact@rubynl.org?subject=I'd like to give a lightning talk">Tell us</a> about your talk!</div>
+        </div>
+      </div>
+
       <div class="entry">
         <div class="time">21:00 - 22:00</div>
         <div class="details">
